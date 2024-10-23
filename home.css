@@ -42,7 +42,7 @@ header nav{
 }
 
 header .logo {
-    width: 40vw;
+    width: 35vw;
     height: 10vh;
     /* background-color: blue; */
 }
@@ -57,7 +57,7 @@ header nav .nav-links {
 }
 header nav .nav-links ul{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 header nav ul li a{
@@ -85,7 +85,10 @@ header nav ul li a:hover{
 .btn-inscription a:hover{
     background-color:  var(--hover-color);
 }
-
+header nav .menu a{
+   color: #582900;
+   display: none;
+}
 .main{
     height: 80vh;
     background-image: url("./images/background-home.svg");
@@ -181,7 +184,17 @@ header nav ul li a:hover{
 }
 
 @media only screen and (min-width: 900px) and (max-width: 960px){
+    header{
+        height: 18vh;
+    }
+    .main{
+        height: 82vh;
+    }
+    header nav{
 
+        padding: 18px 0;
+
+    }
     header .sub-div{
         font-size: 12px;
     }
@@ -194,8 +207,134 @@ header nav ul li a:hover{
         padding: 4px 12px;
         font-size: 13px;
     }
+    .container{
+        width: 90vw;
+        margin: 0 auto;
+    }
 
 }
-@media only screen and (min-width: 900px) and (max-width: 960px){
+@media only screen  and (min-width:803px) and (max-width: 900px){
+    header{
+        height: 18vh;
+    }
+    
+    .main{
+        height: 82vh;
+    }
+    header nav{
+        padding: 18px 0;
+    }
+    header .sub-div{
+        font-size: 11px;
+    }
+    
+    header nav ul li a{
+        font-size: 13px;
+    }
 
+    .btn-inscription a{
+        padding: 4px 10px;
+        font-size: 13px;
+    }
+    .content-container h1{
+        font-size: 38px;
+    }
+    
+    .content-container p{
+        font-size: 13px;
+    }
+    .content-container a{
+        padding: 6px 12px; 
+        font-size: 14px;
+    }
+    .container{
+        width: 90vw;
+        margin: 0 auto;
+    }
+    
+}
+@media only screen  and (min-width: 761px) and (max-width: 802px){
+    .container{
+        width: 95vw;
+        margin: 0 auto;
+    }
+    header{
+        height: 16vh;
+    }
+    .main{
+        height: 84vh;
+    }
+    header nav{
+        padding: 12px 0;
+    
+    }
+    header .sub-div{
+        font-size: 10px;
+    }
+   
+    header nav ul li a{
+        font-size: 12px;
+    }
+  
+    .btn-inscription a{
+        padding: 4px 10px;
+        font-size: 12px;
+    }
+    .content-container h1{
+        font-size: 36px;
+        font-weight: 800px;
+    }
+    
+    .content-container p{
+        font-size: 13px;
+    }
+    .content-container a{
+        padding: 6px 12px; 
+        font-size: 13px;
+    }
+    .container{
+        width: 90vw;
+        margin: 0 auto;
+    }
+    
+    
+}
+
+@media only screen  and (max-width: 761px){
+    header nav .nav-links{
+        display: none;
+    }
+    .btn-inscription a{
+        display: none;
+    }
+    header .sub-div{
+        display: none;
+    }
+    header nav .menu a{
+        display: block;
+    }
+    header {
+        height: 12vh;      
+    }
+    .main{
+        height: 88vh;
+    
+    }
+    header .logo {
+        width: 100vw;
+        height: 6vh;
+    }
+    .content-container h1{
+        font-size: 40px;
+        font-weight: 900px;
+    }
+    
+    .content-container p{
+        font-size: 13px;
+    }
+    .content-container a{
+        padding: 6px 12px; 
+        font-size: 14px;
+    }
+   
 }

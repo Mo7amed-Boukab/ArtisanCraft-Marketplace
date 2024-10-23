@@ -103,7 +103,7 @@ header nav ul li a:hover{
     height: 100%;
 }
 .product-category{
-    width: 30%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;

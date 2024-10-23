@@ -135,6 +135,7 @@ header nav ul li a:hover{
     background-color: rgba(174, 137, 100, 0.4);
     border-radius: 10px;
     display: flex;
+    width: 50%;
 }
 .all .selection-bar p{
     margin: 0px 30px;
@@ -156,4 +157,85 @@ header nav ul li a:hover{
     border-radius:10px;
     width:100px;
     text-align: center;
+}
+
+.cards{
+   
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:230px ;
+    height: 350px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+    margin: 30px 0px;
+    border-radius: 10px;
+    transition: 200ms;
+}
+
+.card .product-image {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    transition: 1s; 
+}
+.card .product-image img{
+    width: 90%;
+    height: 100%;
+
+}
+.card .product-title{
+    font-weight: 400;
+}
+.card .product-description{
+    font-weight:200;
+}
+.card .product-price{
+    font-weight: 800;
+    color: var(--hr-color);
+    letter-spacing: 2px;
+}
+.card .product-btn button{
+   border-radius: 15px;
+   height: 35px;
+   width: 170px;
+   color: var(--hr-color);
+   text-align: center;
+}
+
+.card .product-btn button:hover{
+    background-color:rgba(174, 137, 100, 1);
+    color: #fff;
+    cursor: pointer;
+}
+.seller{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 400px;
+    height: 150px;
+    background-color:blue;
+    border-radius: 15px;
+}
+.seller .seller-image{
+    height: 100%;
+    width: 60%;
+}
+.seller .seller-image img{
+    height: 100%;
+}
+.seller .seller-infos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
 }

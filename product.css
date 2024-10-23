@@ -145,6 +145,9 @@ header nav ul li a:hover{
     text-align: center;
     transition :300ms ;
 }
+.content-product{
+    max-width: 70%;
+}
 .content-product .selection-bar p:hover{
     background-color: rgba(88, 41, 0, 0.43);
     border-radius:10px;
@@ -160,12 +163,11 @@ header nav ul li a:hover{
 }
 
 .cards{
-   
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    gap: 30px;
+    gap: 20px;
 }
 
 .card{
@@ -220,14 +222,14 @@ header nav ul li a:hover{
     display: flex;
     justify-content: center;
     align-content: center;
-    width: 400px;
-    height: 150px;
-    background-color:blue;
+    width: 35%;
+    height: 120px;
+    background-color:rgba(174, 137, 100, 0.4);
     border-radius: 15px;
 }
 .seller .seller-image{
     height: 100%;
-    width: 60%;
+    width: 40%;
 }
 .seller .seller-image img{
     height: 100%;
@@ -236,5 +238,62 @@ header nav ul li a:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    margin-right: 50px;
 }
+.seller .seller-infos h4{
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    text-align: center;  
+    padding: 5px;
+}
+.seller .seller-infos span{
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+.seller .seller-infos span img{
+    width: 30px;
+    height: 30px;
+    margin: 5px 10px;
+}
+.seller .seller-infos .verification-icon{
+    width: 20px;
+    height: 20px;
+}
+.title-verification{
+    display: flex;
+    align-items: center;
+}
+.sellers{
+    display:flex;
+    gap: 20px;
+    justify-content: center;
+    animation: scrolling 10s linear infinite;
+    width: 100%;
+}
+ @keyframes scrolling {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  .pagination {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .pagination a {
+    color: black;
+    float: left;
+    padding: 8px 20px;
+    margin: 20px 0px;
+    text-decoration: none;
+  }
+  
+  .pagination a.active {
+    background-color: rgba(71, 71, 71, 1);
+    color: white;
+  }

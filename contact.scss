@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+$color_1: #582900;
+$color_2: #ae8964;
+$color_3: #fbf9f9;
+$text_1: 60px ;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+// body_contact ========================================================================================================================================
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.body_contact {
+  width: 90vw;
+  height: 100vh;
+
+  display: grid;
+  grid-template-rows: 250px 1fr 1fr;
+}
+
+/* Section 1 ============================================================================================================================================ */
+.contact_1 {
+  background-color: $color_1;
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.div_1_1 {
+  background-color: $color_1;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.div_1_1 h1{
+  font-size: $text_1;
+  color: $color_3;
+
+  
+}
+
+
+.div_2_1 {
+  height: 100%;
+}
+
+/* section 2 ================================================================================================================================= */
+
+.contact_2 {
+  background-color: $color_2;
+  height: 600px;
+  margin-top: 3vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.div_1_2 {
+  background-color: $color_3;
+  justify-self: center;
+  height: 95%;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.div_1_2 h1 {
+  font-size: 30px;
+}
+
+.div_1_2 button {
+  background-color: $color_2;
+  color: $color_3;
+  font-size: 20px;
+  height: 50px;
+  width: 200px;
+  border: none;
+  border-radius: 5px;
+}
+.div_1_2 button:hover {
+  background-color: $color_3;
+  color: $color_2;
+  border: 2px solid $color_2;
+}
+.forme {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+.forme label {
+  text-align: start;
+  font-size: 15px;
+}
+
+.forme input,
+.forme textarea {
+  width: 100%;
+  height: 50px;
+  font-size: 15px;
+  border-radius: 15px;
+  border: none;
+  border-bottom: 4px solid $color_2;
+  padding-left: 5px;
+}
+
+.forme input:hover,
+.forme textarea:hover {
+  background-color: $color_2;
+}
+
+.forme textarea {
+  height: 70px;
+}
+
+.div_1_2 h1 span {
+  color: $color_2;
+}
+
+.div_2_2 {
+  background-color: $color_3;
+  height: 95%;
+  width: 90%;
+  justify-self: center;
+  display: grid;
+  grid-template-rows: 100px auto 1fr auto 1fr;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.div_2_2 .div_1_2_2 {
+  background-color: $color_2;
+  width: 90%;
+  height: 4rem;
+  opacity: 0.7;
+  border-radius: 10px;
+  grid-row: 1 / 2;
+  justify-self: center;
+}
+
+.div_2_2 .div_1_2_2 p {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.div_2_2 .div_2_2_2 {
+  grid-row: 2 / 4;
+  justify-self: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  width: 90%;
+  height: 15rem;
+}
+
+.d1 img,
+.d2 img,
+.d3 img,
+.d4 img {
+  width: 45px;
+}
+.d1:hover,
+.d2:hover,
+.d3:hover,
+.d4:hover {
+  background-color: $color_2;
+}
+
+.div_2_2 .div_3_2_2 {
+  grid-row: 4 / 6;
+  justify-self: center;
+  width: 90%;
+  height: 13rem;
+  border: 2px solid $color_2;
+}
+.div_2_2 .div_3_2_2 iframe {
+  width: 100%;
+  height: 100%;
+}
+/* section 3 ======================================================================================================================================================================================================================================================================== */
+
+.contact_3 {
+  width: 100%;
+  height: 250px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.div_1_3 {
+  width: 60%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.div_1_3_1 {
+  background-color: $color_2;
+  opacity: 0.8;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.div_1_3_1 h4 {
+  width: 80%;
+  font-size: 25px;
+  color: $color_3;
+  text-align: center;
+}

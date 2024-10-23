@@ -181,7 +181,17 @@ header nav ul li a:hover{
 }
 
 @media only screen and (min-width: 900px) and (max-width: 960px){
+    header{
+        height: 18vh;
+    }
+    .main{
+        height: 81vh;
+    }
+    header nav{
 
+        padding: 18px 0;
+
+    }
     header .sub-div{
         font-size: 12px;
     }
@@ -196,6 +206,82 @@ header nav ul li a:hover{
     }
 
 }
-@media only screen and (min-width: 900px) and (max-width: 960px){
+@media only screen  and (min-width: 768px) and (max-width: 900px){
+    header{
+        height: 18vh;
+    }
+    .main{
+        height: 82vh;
+    }
+    header nav{
 
+        padding: 18px 0;
+
+    }
+    header .sub-div{
+        font-size: 11px;
+    }
+    
+    header nav ul li a{
+        font-size: 12px;
+    }
+    header nav .nav-links ul{
+        display: flex;
+        justify-content: space-between;
+    }
+   
+    .btn-inscription a{
+        padding: 4px 10px;
+        font-size: 12px;
+    }
+    .content-container h1{
+        font-size: 38px;
+    }
+    
+    .content-container p{
+        font-size: 13px;
+    }
+    .content-container a{
+        padding: 6px 12px; 
+        font-size: 14px;
+    }
+    .container{
+        width: 90vw;
+        margin: 0 auto;
+    }
+    
+}
+@media only screen  and (min-width: 420px) and (max-width: 767px){
+    .container{
+        width: 95vw;
+        margin: 0 auto;
+    }
+    header{
+            height: 15vh;
+    }
+    .main{
+        height: 85vh;
+    }
+    header nav{
+
+        padding: 10px 0;
+    
+    }
+    header .sub-div{
+        font-size: 10px;
+    }
+    
+    header nav ul li a{
+        font-size: 12px;
+    }
+    header nav .nav-links ul{
+        display: flex;
+        justify-content: space-between;
+    }
+   
+    .btn-inscription a{
+        padding: 4px 10px;
+        font-size: 12px;
+    }
+    
 }

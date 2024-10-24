@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="responsive_contact.css">
 
 
     <title>Contact Us </title>
@@ -39,8 +40,8 @@
     <!-- header ================================================================================================================================================== -->
 
     <section class="body_contact">
-        <!-- Section 1 =============================================================================================================================================== -->
 
+        <!-- Section 1 =============================================================================================================================================== -->
         <section class="contact_1">
             <div class="div_1_1">
                 <h1>Contact Us</h1>
@@ -49,26 +50,28 @@
                 <!-- <img src="images/image_2.jpg" alt="photo_1"> -->
             </div>
         </section>
-        <!-- Section 2 =============================================================================================================================================== -->
 
+
+        <!-- Section 2 =============================================================================================================================================== -->
         <section class="contact_2">
             <div class="div_1_2">
                 <h1>Get In <span>Touch</span></h1>
-                <form action="" class="forme">
+                <form id="contactForm" action="#" class="forme" method="POST">
                     <!-- <label for="Nom et Prenom">Nom & Prénom : </label> -->
-                    <input type="text" placeholder="Nom & Prénom">
+                    <input type="text"  id="name" name="name" placeholder="Nom & Prénom" required>
                     <!-- <label for="Numero de telephone">Numéro de telephone : </label> -->
-                    <input type="number" placeholder="Numéro de telephone">
+                    <input type="number"  placeholder="Numéro de telephone" required>
                     <!-- <label for="Email">Email : </label> -->
-                    <input type="text" placeholder="Email">
+                    <input type="text" id="email" name="email" placeholder="Email" required>
                     <!-- <label for="Message">Votre Message : </label> -->
-                    <textarea name="message" id="message">Votre message</textarea>
+                    <textarea name="message" id="message" required>Votre message</textarea>
                 </form>
                 <a href="#">
-                    <button>
+                    <button type="submit">
                         Envoyer Message
                     </button>
                 </a>
+                
             </div>
             <div class="div_2_2">
                 <div class="div_1_2_2">
@@ -111,9 +114,8 @@
             </div>
         </section>
 
+
         <!-- Section 3 =============================================================================================================================================== -->
-
-
         <section class="contact_3">
             <div class="div_1_3">
                 <div class="div_1_3_1">
@@ -126,6 +128,7 @@
 
     </section>
         <!-- footer  =============================================================================================================================================== -->
+
 
 </body>
 

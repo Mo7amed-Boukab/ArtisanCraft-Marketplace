@@ -42,7 +42,7 @@ header nav{
 }
 
 header .logo {
-    width: 40vw;
+    width: 35vw;
     height: 10vh;
     /* background-color: blue; */
 }
@@ -57,7 +57,7 @@ header nav .nav-links {
 }
 header nav .nav-links ul{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 header nav ul li a{
@@ -85,13 +85,16 @@ header nav ul li a:hover{
 .btn-inscription a:hover{
     background-color:  var(--hover-color);
 }
-
+header nav .menu a{
+   color: #582900;
+   display: none;
+}
 .main{
     height: 80vh;
     background-image: url("./images/background-home.svg");
     background-attachment: fixed;
     background-size:cover;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: darken;
     display: flex;
     justify-content: center;
@@ -185,7 +188,11 @@ header nav ul li a:hover{
         height: 18vh;
     }
     .main{
+<<<<<<< HEAD
         height: 81vh;
+=======
+        height: 82vh;
+>>>>>>> 46a0b373d5f575a0bcabb188fe1e307b4d319952
     }
     header nav{
 
@@ -204,16 +211,29 @@ header nav ul li a:hover{
         padding: 4px 12px;
         font-size: 13px;
     }
+    .container{
+        width: 90vw;
+        margin: 0 auto;
+    }
 
 }
+<<<<<<< HEAD
 @media only screen  and (min-width: 768px) and (max-width: 900px){
     header{
         height: 18vh;
     }
+=======
+@media only screen  and (min-width:803px) and (max-width: 900px){
+    header{
+        height: 18vh;
+    }
+    
+>>>>>>> 46a0b373d5f575a0bcabb188fe1e307b4d319952
     .main{
         height: 82vh;
     }
     header nav{
+<<<<<<< HEAD
 
         padding: 18px 0;
 
@@ -233,6 +253,21 @@ header nav ul li a:hover{
     .btn-inscription a{
         padding: 4px 10px;
         font-size: 12px;
+=======
+        padding: 18px 0;
+    }
+    header .sub-div{
+        font-size: 11px;
+    }
+    
+    header nav ul li a{
+        font-size: 13px;
+    }
+
+    .btn-inscription a{
+        padding: 4px 10px;
+        font-size: 13px;
+>>>>>>> 46a0b373d5f575a0bcabb188fe1e307b4d319952
     }
     .content-container h1{
         font-size: 38px;
@@ -251,12 +286,17 @@ header nav ul li a:hover{
     }
     
 }
+<<<<<<< HEAD
 @media only screen  and (min-width: 420px) and (max-width: 767px){
+=======
+@media only screen  and (min-width: 761px) and (max-width: 802px){
+>>>>>>> 46a0b373d5f575a0bcabb188fe1e307b4d319952
     .container{
         width: 95vw;
         margin: 0 auto;
     }
     header{
+<<<<<<< HEAD
             height: 15vh;
     }
     .main{
@@ -265,11 +305,21 @@ header nav ul li a:hover{
     header nav{
 
         padding: 10px 0;
+=======
+        height: 16vh;
+    }
+    .main{
+        height: 84vh;
+    }
+    header nav{
+        padding: 12px 0;
+>>>>>>> 46a0b373d5f575a0bcabb188fe1e307b4d319952
     
     }
     header .sub-div{
         font-size: 10px;
     }
+<<<<<<< HEAD
     
     header nav ul li a{
         font-size: 12px;
@@ -279,9 +329,187 @@ header nav ul li a:hover{
         justify-content: space-between;
     }
    
+=======
+   
+    header nav ul li a{
+        font-size: 12px;
+    }
+  
+>>>>>>> 46a0b373d5f575a0bcabb188fe1e307b4d319952
     .btn-inscription a{
         padding: 4px 10px;
         font-size: 12px;
     }
+<<<<<<< HEAD
     
 }
+=======
+    .content-container h1{
+        font-size: 36px;
+        font-weight: 800px;
+    }
+    
+    .content-container p{
+        font-size: 13px;
+    }
+    .content-container a{
+        padding: 6px 12px; 
+        font-size: 13px;
+    }
+    .container{
+        width: 90vw;
+        margin: 0 auto;
+    }
+    
+    
+}
+
+@media only screen  and (max-width: 761px){
+    header nav .nav-links{
+        display: none;
+    }
+    .btn-inscription a{
+        display: none;
+    }
+    header .sub-div{
+        display: none;
+    }
+    header nav .menu a{
+        display: block;
+    }
+    header {
+        height: 12vh;      
+    }
+    .main{
+        height: 88vh;
+    
+    }
+    header .logo {
+        width: 100vw;
+        height: 6vh;
+    }
+    .content-container h1{
+        font-size: 40px;
+        font-weight: 900px;
+    }
+    
+    .content-container p{
+        font-size: 13px;
+    }
+    .content-container a{
+        padding: 6px 12px; 
+        font-size: 14px;
+    }
+   
+}
+
+.page2-home {
+    width: 85vw;
+    height: 100vh;
+    margin: 0 auto;
+    /* background-color: #e5dbd1; */
+}
+
+.page2-home .prd-phare {
+    text-align: center;
+    height: 25vh;
+}
+
+.page2-home .prd-phare h1 {
+    font-size: 40px;
+    padding: 20px;
+    color: #370028;
+}
+
+.page2-home .prd-phare p {
+    color: #03224C;
+    font-size: 18px;
+
+}
+
+.page2-home .cart-perent {
+    display: flex;
+    justify-content: space-evenly;
+    height: 75vh;
+    /* background-color: #6b6b6b; */
+    
+}
+
+.page2-home .cart {
+    background-color: white;
+    width: 26%; 
+}
+
+.page2-home .box-image {
+    background-color: hsl(36, 17%, 53%); 
+    width: 100%;
+    height: 200px;
+    margin: 16px 0;
+}
+
+.page2-home .box-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.page2-home .details {
+    background-color: #d9d9d998;
+    height: 200px;
+    border-radius: 12px;
+    text-align: center;
+}
+.page2-home .details h4 {
+    color: #03224C; 
+    padding: 10px;
+    font-weight: 600;
+}
+
+.page2-home .details .description {
+    font-size: 15px;
+    font-weight: 300;
+    padding: 10px 30px;
+    color: #040404;
+}
+.details .prix{
+    font-weight: 500;
+}
+
+.page2-home .details a {
+    font-size: 14px;
+    padding: 7px 16px;
+    background-color: #03224C;
+    color:#ffffff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer; 
+}
+
+.page2-home .details a:hover {
+    background-color: #474747;
+}
+
+.page3-home {
+    width: 85vw;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: #e5dbd1;
+}
+
+.page3-home .offre-promotion {
+    text-align: center;
+    height: 25vh;
+}
+
+.page2-home .offre-promotion h1 {
+    font-size: 40px;
+    padding: 20px;
+    color: #370028;
+}
+
+.page2-home .offre-promotion p {
+    color: #03224C;
+    font-size: 18px;
+
+}
+>>>>>>> 46a0b373d5f575a0bcabb188fe1e307b4d319952

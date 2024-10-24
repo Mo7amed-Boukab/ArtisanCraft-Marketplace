@@ -27,7 +27,6 @@ header .sub-div{
 }
 
 header{
-    /* background-color: aqua; */
     height: 20vh;
     border-bottom: solid 2px var(--hr-color);
 }
@@ -36,7 +35,6 @@ header nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background-color: yellow; */
     padding: 20px 0;
 
 }
@@ -44,7 +42,6 @@ header nav{
 header .logo {
     width: 35vw;
     height: 10vh;
-    /* background-color: blue; */
 }
 header .logo img{
     width: 30%;
@@ -53,7 +50,6 @@ header .logo img{
 
 header nav .nav-links {
     width: 45vw;
-    /* background-color: aqua; */
 }
 header nav .nav-links ul{
     display: flex;
@@ -74,7 +70,6 @@ header nav ul li a:hover{
     width: 15vw;
     display: flex;
     justify-content: flex-end;
-    /* background-color: red; */
 }
 .btn-inscription a{
     padding: 6px 16px;
@@ -110,14 +105,11 @@ header nav .menu a{
     font-weight: 800;
     font-size: 44px;
     color: rgb(255, 255, 255);
-
-    /* background-color: red; */
 }
 
 .home-content-container p{
     padding: 20px;
     color: rgb(255, 255, 255,0.9);
-    /* background-color: rgb(13, 109, 18); */
 }
 .home-content-container a{
     background-color: rgba(88, 41, 0, 0.7);
@@ -213,7 +205,6 @@ header nav .menu a{
         width: 90vw;
         margin: 0 auto;
     }
-
 }
 
 @media only screen  and (min-width:803px) and (max-width: 900px){
@@ -342,7 +333,6 @@ header nav .menu a{
 .page2-home {
     width: 85vw;
     margin: 0 auto;
-    /* background-color: #e5dbd1; */
 }
 
 .page2-home .prd-phare {
@@ -619,12 +609,10 @@ header nav .menu a{
 .page4-home {
     width: 85vw;
     margin: 0 auto;
-    /* background-color: red; */
 }
 
 .page4-home .temoignageClient {
     text-align: center;
-    /* background-color: yellow; */
 }
 
 .page4-home .temoignageClient h1 {
@@ -738,7 +726,7 @@ p {
    padding: 30px;
    border-bottom: 2px solid #AE8964; 
 }
-/* ----------------- footer part 1 content styling */
+/* ----------------- footer ---------------------*/
 .footer-container {
     width: 90%;
     margin: 0 auto;
@@ -788,7 +776,7 @@ footer{
    cursor: pointer;   
  
 }
-/* ----------------- footer part 2 content styling */
+/* ----------------- footer part 2  */
 .part-2 {
    display: flex;
    justify-content: space-between; 
@@ -821,7 +809,15 @@ footer{
    color: #AE8964;
    transform: scale(1.2); 
 }
-@media (max-width: 768px) {
+
+@media only screen and (max-width: 768px) {
+    .page4-home .temoignageClient h1 {
+        font-size: 36px;
+    }
+    
+    .page4-home .temoignageClient p {
+        font-size: 15px;
+    }
     .footer-container {
        flex-direction: column;
        text-align: center;
@@ -846,8 +842,14 @@ footer{
     }
  }
  
- /* Responsivité pour téléphones */
- @media (max-width: 480px) {
+ @media only screen and (max-width: 480px) {
+    .page4-home .temoignageClient h1 {
+        font-size: 34px;
+    }
+    
+    .page4-home .temoignageClient p {
+        font-size: 14px;
+    }
     .footer-container {
        width: 100%;
        padding: 10px;

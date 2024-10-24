@@ -55,7 +55,7 @@ body{
     align-items: center;
     /* grid-template-columns: 1fr; */
     text-align:center;
-    line-height: 3em ;
+    line-height: 2.5em ;
     width:100%;
     height:400px;
     
@@ -69,7 +69,8 @@ body{
     gap: 10px;
     margin-top:20px;
     height: 400px;
-    background-color: #582900;
+    background-color: aqua;
+    
     
 }
 
@@ -86,9 +87,9 @@ body{
 
 .second_text{ 
     /* margin-top: px; */
-    background-color: #fff;
+   background-color: #fff;/
     
-    line-height: 4em;
+    line-height: 2.5em;
   display: flex;
   flex-direction: column;
   justify-content:center;
@@ -129,20 +130,114 @@ h1{
     height: 400px;
 }
 .third_text{
-    background-color:blue;
+  background-color: antiquewhite;
     display:flex;
     flex-direction:column ;
     justify-content: center;
     /* margin-top:80px ; */
     text-align: center;
     align-items: center;
-    line-height:3em ;
+    line-height:2.5em ;
     height: 400px;
+    bq
 
 }
 
-@media  screen and(max-width:1163px){
+@media  screen and (max-width:1151px) and (min-width:850px){
     h1{font-size: x-large;
-    background-color: aqua;}
+        
+     }
+    .first_text,.second_text,.third_text{
+
+        line-height: 1.6em;
+        gap:10px; }
+p{font-size: 14px;}
     
 }
+ @media screen and (max-width :850px)  and (min-width:630px) {
+
+    .sectionglobale{
+        width: 95%;
+    }
+    
+    h1{ font-size: larger;
+        background-color: gray;
+    }
+    .first_text,.second_text,.third_text{
+        line-height: 1.6em;
+        gap:10px;
+    }
+    p{
+        font-size:12px ;
+    }
+    .about1,.about2,.about3{
+        height:350px ;
+    }
+    .first_part img,.second_part img,.third_page img{
+        height:350px ;
+    }
+    .first_text ,.second_text,.third_text{
+        height: 350px;
+    }
+}
+/*
+@media screen and (max-width:630px)  and (min-width:440px) {
+    
+    .sectionglobale{
+        width: 100%;
+    }
+    h1{
+        font-size: medium;
+        background-color: aqua;
+    }
+    p{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:440px) {
+    h1{font-size: small;
+    background-color: antiquewhite;}
+    p{
+        font-size:8px ;
+    }
+    .first_text,.second_text,.third_text{
+        line-height: 1.5em;
+    }
+    
+}
+    */
+    @media screen  and (max-width:630px){
+        .about1{
+            background-color: orange;
+           display:flex;
+           flex-direction: column;
+           justify-items: center;
+           justify-content: center;
+           width:100%;
+          
+            }
+            .about2{
+                display:flex;
+               flex-direction: column-reverse;
+                }
+                .about3{     
+               display:flex;
+               flex-direction: column;
+                }
+            
+            .sectionglobale{
+                
+                width: 100%;
+                height: max-content;
+            }
+           
+           
+            h1{font-size: medium;}
+            p{
+                font-size: 10px;
+            }
+            .first_part img{
+                height:150px;
+              
+            }
+    }

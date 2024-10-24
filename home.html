@@ -3,24 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="home.csss">
-    <title>Accuiel</title>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
+    <link rel="stylesheet" href="home.css">
+    <title>Accueil</title>
 </head>
 <body>
+   
     <header>
-        <div>Découvrez nos artisans locaux au Maroc ! Profitez de la livraison gratuite pour toute commande supérieure à 99 MAD !</div>
-        <nav>
-            <div class="logo"> ArtisaCraft<br><span>Marketplace</span> </div>
+        <div class="sub-div">Découvrez nos artisans locaux au Maroc ! Profitez de la livraison gratuite pour toute commande supérieure à 99 MAD !</div>
+        <nav class="container">
+            <!-- div 1-------------- -->
+            <!-- <div class="logo"> ArtisaCraft<br><span>Marketplace</span> </div> -->
+            <div class="logo">
+                <img src="./images/logo.svg" alt="">
+            </div>
+            <!-- div 2-------------- -->
+            <div class="nav-links">
+                <ul>
+                    <li><a href="home.html">Accueil</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="product.html">Produits</a></li>
+                    <li><a href="product.html">Catégories</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <!-- div 3-------------- -->
+             <div  class="btn-inscription">                
+                    <a href="#">Inscription</a>
+            </div>
+            <div class="menu">
+                <a href="#"><span class="material-symbols-outlined">menu</span></a>
+            </div>
+             
         </nav>
-        <div class="main">
-            <h1>Découvrez l'Artisanat Authentique</h1>
-            <p>Nous mettons en lumière les créations d'artisans locaux talentueux. 
-                Chaque pièce raconte une histoire, avec une attention aux détails
-                et un savoir-faire exceptionnel. Explorez nos collections uniques
-                pour transformer votre maison avec des objets faits à la main,
-                conçus avec passion.</p>
-        </div>
     </header>
+    <!-- -------------------------------  main section ----------------------------- -->
+        <div class="main">
+            <div class="content-container">
+                <h1>Découvrez l'Artisanat Authentique</h1>
+                <p>Nous mettons en lumière les créations d'artisans locaux talentueux. 
+                    Chaque pièce raconte une histoire, avec une attention aux détails
+                    et un savoir-faire exceptionnel. Explorez nos collections uniques
+                    pour transformer votre maison avec des objets faits à la main,
+                    conçus avec passion.
+                </p>
+                <a href="product.html">Explorer nos produits</a>
+            </div>
+              
+        </div>
+
+        <!-- -------------------------- page 2 : Produits Phare ------------------- -->
+        <section class="page2-home">
+            <div class="prd-phare">
+                <h1>Produits phare</h1>
+                <p>Découvrez nos meilleures ventes, soigneusement sélectionnées pour vous !</p>
+            </div>
+            <div class="cart-perent">
+                    
+                    <div class="cart">
+                        <div class="box-image">
+                            <img src="" alt="image 1">
+                        </div>
+                        <div class="details">
+                            <h4>Coussin brodé à la main</h4>
+                            <p class="prix">Prix : 99 DH</p>
+                            <p class="description">Coussin en coton, brodé à la main avec des motifs traditionnels.</p>
+                         <a href="more-dtl.html">Consulter le Produit</a>
+                        </div>
+                    </div>
+
+                    <div class="cart">
+                        <div class="box-image">
+                            <img src="" alt="image 2">
+                        </div>
+                        <div class="details">
+                            <h4>Lanterne en Fer Forgé</h4>
+                            <p class="prix">Prix : 149 DH</p>
+                            <p class="description">Lanterne artisanale, idéale pour ajouter une touche marocaine à votre intérieur.</p>
+                            <a href="more-dtl.html">Consulter le Produit</a>
+                        </div>
+                    </div>
+
+                    <div class="cart">
+                        <div class="box-image">
+                            <img src="" alt="image 2">
+                        </div>
+                        <div class="details">
+                            <h4>Tasse Artisanale</h4>
+                            <p class="prix">Prix : 129 DH</p>
+                            <p class="description">Cette tasse faite main apporte une touche unique à votre café du matin.</p>
+                            <a href="more-dtl.html">Consulter le Produit</a>
+                        </div>
+                    </div>
+            </div>
+        </section>
+        <section class="page3-home">
+            <div class="offre-promotion">
+                <h1>Promotions et Offres Spéciale</h1>
+                <p>Profitez de nos offres exclusives sur une sélection de produits artisanaux !</p>
+            </div>
+             <!-- ---------------------- Partie 1 ---------------------- -->
+
+            <div class="offre">
+                <!-- ----------------------- -->
+                 <h2>Offres Actuelles</h2>
+                <div class="image">
+                    <img src="" alt="image d'offre">
+                </div>
+                <!-- ------------------------ -->
+                <div class="details-offre">
+                    <h3>-40% sur les Tasses en Céramique !</h3>
+                    <p>Apportez une touche artisanale à vos matins avec nos tasses en céramique faites main. Profitez d’une réduction de 20% sur toute la collection !</p>
+                    <p>Prix initial : 149 DH</p>
+                    <p>Prix promotionnel : 99 DH</p>
+                    <p>Date de validité : Offre valable jusqu'au 30 Octobre 2024.</p>
+                    <a href="more-dtl.html">En Savoir Plus</a>
+                </div>
+                <!-- ---------------------- partie 2 --------------------- -->
+
+                 <h2>Livraison Gratuite !</h2>
+                 <h3>Livraison en 3 à 5 jours ouvrés sur tout le territoire !</h3>
+
+                 <p>Pour toute commande supérieure à 450 MAD, la livraison est offerte ! C’est le moment idéal pour découvrir plus de produits artisanaux.</p>
+                 <p>Achetez des articles populaires comme nos Coussins en Tissu ou nos  Vases en Céramique 
+                    pour bénéficier de l’offre , et n'oubliez pas : tous les retours sont gratuits aussi !</p>
+                 <p>Offre valable jusqu'à la fin du mois ! Ne manquez pas cette occasion !</p> 
+                 <a href="product.html">Explorer les Produits</a> 
+
+                 <!-- ---------------------------------- fin page 3 -------------------------- -->
+                    
+
+            </div>
+        </section>
+         
+        
+
     
 </body>
 </html>

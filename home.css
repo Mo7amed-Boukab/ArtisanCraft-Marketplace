@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none
+}
+
+:root {
+    --hover-color: #AE8964;
+    --text-color: black;
+    --title-color: rgba(88, 41, 0, 1);
+    --hr-color:rgb(88, 41, 1);
+  }
+header .sub-div{
+    background-color: #AE8964;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.container{
+    width: 85vw;
+    margin: 0 auto;
+}
+
+header{
+    /* background-color: aqua; */
+    height: 20vh;
+    border-bottom: solid 2px var(--hr-color);
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: yellow; */
+    padding: 20px 0;
+
+}
+
+header .logo {
+    width: 35vw;
+    height: 10vh;
+    /* background-color: blue; */
+}
+header .logo img{
+    width: 30%;
+    height: 100%;
+}
+
+header nav .nav-links {
+    width: 45vw;
+    /* background-color: aqua; */
+}
+header nav .nav-links ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav ul li a{
+
+    background-color:#fff;
+    font-size: 15px;
+    color: var(--text-color);
+}
+header nav ul li a:hover{
+ color:  var(--hover-color);
+
+}
+.btn-inscription{
+    width: 15vw;
+    display: flex;
+    justify-content: flex-end;
+    /* background-color: red; */
+}
+.btn-inscription a{
+    padding: 6px 16px;
+    background-color: #582900;
+    color: #fff;
+    border-radius: 6px;
+}
+.btn-inscription a:hover{
+    background-color:  var(--hover-color);
+}
+header nav .menu a{
+   color: #582900;
+   display: none;
+}
+.main{
+    height: 80vh;
+    background-image: url("./images/background-home.svg");
+    background-attachment: fixed;
+    background-size:cover;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content-container{
+    width: 85vw;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.content-container h1{
+    font-weight: 800;
+    font-size: 44px;
+    color: rgb(255, 255, 255);
+
+    /* background-color: red; */
+}
+
+.content-container p{
+    padding: 20px;
+    color: rgb(255, 255, 255,0.9);
+    /* background-color: rgb(13, 109, 18); */
+}
+.content-container a{
+    background-color: rgba(88, 41, 0, 0.7);
+    color: #ffffff;  padding: 10px 20px; 
+    display: inline-block;
+    margin: 10px 0;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 961px) and (max-width: 1096px) {
+
+    header .sub-div{
+        font-size: 14px;
+    }
+    
+    header nav ul li a{
+        font-size: 14px;
+       
+    }
+    
+    .btn-inscription a{
+        padding: 4px 14px;
+        font-size: 15px;
+    }
+    .content-container h1{
+        font-weight: 800;
+        font-size: 40px;
+    }
+    
+    .content-container p{
+        padding: 14px 0;
+        font-size: 14px;
+    }
+    .content-container a{
+        padding: 7px 14px; 
+        font-size: 14px;
+    }
+}
+@media only screen and (min-width: 900px) and (max-width: 960px){
+    header .sub-div{
+        font-size: 13px;
+    }
+    
+    header nav ul li a{
+        font-size: 13px;
+    }
+   
+    .btn-inscription a{
+        padding: 4px 12px;
+        font-size: 13px;
+    }
+    .content-container h1{
+        font-size: 38px;
+    }
+    
+    .content-container p{
+        font-size: 13px;
+    }
+    .content-container a{
+        padding: 6px 12px; 
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 960px){
+    header{
+        height: 18vh;
+    }
+    .main{
+        height: 82vh;
+    }
+    header nav{
+
+        padding: 18px 0;
+
+    }
+    header .sub-div{
+        font-size: 12px;
+    }
+    
+    header nav ul li a{
+        font-size: 13px;
+    }
+   
+    .btn-inscription a{
+        padding: 4px 12px;
+        font-size: 13px;
+    }
+    .container{
+        width: 90vw;
+        margin: 0 auto;
+    }
+
+}
+@media only screen  and (min-width:803px) and (max-width: 900px){
+    header{
+        height: 18vh;
+    }
+    
+    .main{
+        height: 82vh;
+    }
+    header nav{
+        padding: 18px 0;
+    }
+    header .sub-div{
+        font-size: 11px;
+    }
+    
+    header nav ul li a{
+        font-size: 13px;
+    }
+
+    .btn-inscription a{
+        padding: 4px 10px;
+        font-size: 13px;
+    }
+    .content-container h1{
+        font-size: 38px;
+    }
+    
+    .content-container p{
+        font-size: 13px;
+    }
+    .content-container a{
+        padding: 6px 12px; 
+        font-size: 14px;
+    }
+    .container{
+        width: 90vw;
+        margin: 0 auto;
+    }
+    
+}
+@media only screen  and (min-width: 761px) and (max-width: 802px){
+    .container{
+        width: 95vw;
+        margin: 0 auto;
+    }
+    header{
+        height: 16vh;
+    }
+    .main{
+        height: 84vh;
+    }
+    header nav{
+        padding: 12px 0;
+    
+    }
+    header .sub-div{
+        font-size: 10px;
+    }
+   
+    header nav ul li a{
+        font-size: 12px;
+    }
+  
+    .btn-inscription a{
+        padding: 4px 10px;
+        font-size: 12px;
+    }
+    .content-container h1{
+        font-size: 36px;
+        font-weight: 800px;
+    }
+    
+    .content-container p{
+        font-size: 13px;
+    }
+    .content-container a{
+        padding: 6px 12px; 
+        font-size: 13px;
+    }
+    .container{
+        width: 90vw;
+        margin: 0 auto;
+    }
+    
+    
+}
+
+@media only screen  and (max-width: 761px){
+    header nav .nav-links{
+        display: none;
+    }
+    .btn-inscription a{
+        display: none;
+    }
+    header .sub-div{
+        display: none;
+    }
+    header nav .menu a{
+        display: block;
+    }
+    header {
+        height: 12vh;      
+    }
+    .main{
+        height: 88vh;
+    
+    }
+    header .logo {
+        width: 100vw;
+        height: 6vh;
+    }
+    .content-container h1{
+        font-size: 40px;
+        font-weight: 900px;
+    }
+    
+    .content-container p{
+        font-size: 13px;
+    }
+    .content-container a{
+        padding: 6px 12px; 
+        font-size: 14px;
+    }
+   
+}
+
+.page2-home {
+    width: 85vw;
+    height: 100vh;
+    margin: 0 auto;
+    /* background-color: #e5dbd1; */
+}
+
+.page2-home .prd-phare {
+    text-align: center;
+    height: 25vh;
+}
+
+.page2-home .prd-phare h1 {
+    font-size: 40px;
+    padding: 20px;
+    color: #370028;
+}
+
+.page2-home .prd-phare p {
+    color: #03224C;
+    font-size: 18px;
+
+}
+
+.page2-home .cart-perent {
+    display: flex;
+    justify-content: space-evenly;
+    height: 75vh;
+    /* background-color: #6b6b6b; */
+    
+}
+
+.page2-home .cart {
+    background-color: white;
+    width: 26%; 
+}
+
+.page2-home .box-image {
+    background-color: hsl(36, 17%, 53%); 
+    width: 100%;
+    height: 200px;
+    margin: 16px 0;
+}
+
+.page2-home .box-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.page2-home .details {
+    background-color: #d9d9d998;
+    height: 200px;
+    border-radius: 12px;
+    text-align: center;
+}
+.page2-home .details h4 {
+    color: #03224C; 
+    padding: 10px;
+    font-weight: 600;
+}
+
+.page2-home .details .description {
+    font-size: 15px;
+    font-weight: 300;
+    padding: 10px 30px;
+    color: #040404;
+}
+.details .prix{
+    font-weight: 500;
+}
+
+.page2-home .details a {
+    font-size: 14px;
+    padding: 7px 16px;
+    background-color: #03224C;
+    color:#ffffff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer; 
+}
+
+.page2-home .details a:hover {
+    background-color: #474747;
+}
+
+.page3-home {
+    width: 85vw;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: #e5dbd1;
+}
+
+.page3-home .offre-promotion {
+    text-align: center;
+    height: 25vh;
+}
+
+.page2-home .offre-promotion h1 {
+    font-size: 40px;
+    padding: 20px;
+    color: #370028;
+}
+
+.page2-home .offre-promotion p {
+    color: #03224C;
+    font-size: 18px;
+
+}

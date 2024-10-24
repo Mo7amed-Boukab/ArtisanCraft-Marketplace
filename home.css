@@ -94,7 +94,7 @@ header nav .menu a{
     background-image: url("./images/background-home.svg");
     background-attachment: fixed;
     background-size:cover;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: darken;
     display: flex;
     justify-content: center;
@@ -337,4 +337,114 @@ header nav .menu a{
         font-size: 14px;
     }
    
+}
+
+.page2-home {
+    width: 85vw;
+    height: 100vh;
+    margin: 0 auto;
+    /* background-color: #e5dbd1; */
+}
+
+.page2-home .prd-phare {
+    text-align: center;
+    height: 25vh;
+}
+
+.page2-home .prd-phare h1 {
+    font-size: 40px;
+    padding: 20px;
+    color: #370028;
+}
+
+.page2-home .prd-phare p {
+    color: #03224C;
+    font-size: 18px;
+
+}
+
+.page2-home .cart-perent {
+    display: flex;
+    justify-content: space-evenly;
+    height: 75vh;
+    /* background-color: #6b6b6b; */
+    
+}
+
+.page2-home .cart {
+    background-color: white;
+    width: 26%; 
+}
+
+.page2-home .box-image {
+    background-color: hsl(36, 17%, 53%); 
+    width: 100%;
+    height: 200px;
+    margin: 16px 0;
+}
+
+.page2-home .box-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.page2-home .details {
+    background-color: #d9d9d998;
+    height: 200px;
+    border-radius: 12px;
+    text-align: center;
+}
+.page2-home .details h4 {
+    color: #03224C; 
+    padding: 10px;
+    font-weight: 600;
+}
+
+.page2-home .details .description {
+    font-size: 15px;
+    font-weight: 300;
+    padding: 10px 30px;
+    color: #040404;
+}
+.details .prix{
+    font-weight: 500;
+}
+
+.page2-home .details a {
+    font-size: 14px;
+    padding: 7px 16px;
+    background-color: #03224C;
+    color:#ffffff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer; 
+}
+
+.page2-home .details a:hover {
+    background-color: #474747;
+}
+
+.page3-home {
+    width: 85vw;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: #e5dbd1;
+}
+
+.page3-home .offre-promotion {
+    text-align: center;
+    height: 25vh;
+}
+
+.page2-home .offre-promotion h1 {
+    font-size: 40px;
+    padding: 20px;
+    color: #370028;
+}
+
+.page2-home .offre-promotion p {
+    color: #03224C;
+    font-size: 18px;
+
 }

@@ -188,11 +188,7 @@ header nav .menu a{
         height: 18vh;
     }
     .main{
-<<<<<<< HEAD
-        height: 81vh;
-=======
         height: 82vh;
->>>>>>> 46a0b373d5f575a0bcabb188fe1e307b4d319952
     }
     header nav{
 
@@ -217,43 +213,16 @@ header nav .menu a{
     }
 
 }
-<<<<<<< HEAD
-@media only screen  and (min-width: 768px) and (max-width: 900px){
-    header{
-        height: 18vh;
-    }
-=======
+
 @media only screen  and (min-width:803px) and (max-width: 900px){
     header{
         height: 18vh;
     }
     
->>>>>>> 46a0b373d5f575a0bcabb188fe1e307b4d319952
     .main{
         height: 82vh;
     }
     header nav{
-<<<<<<< HEAD
-
-        padding: 18px 0;
-
-    }
-    header .sub-div{
-        font-size: 11px;
-    }
-    
-    header nav ul li a{
-        font-size: 12px;
-    }
-    header nav .nav-links ul{
-        display: flex;
-        justify-content: space-between;
-    }
-   
-    .btn-inscription a{
-        padding: 4px 10px;
-        font-size: 12px;
-=======
         padding: 18px 0;
     }
     header .sub-div{
@@ -267,7 +236,6 @@ header nav .menu a{
     .btn-inscription a{
         padding: 4px 10px;
         font-size: 13px;
->>>>>>> 46a0b373d5f575a0bcabb188fe1e307b4d319952
     }
     .content-container h1{
         font-size: 38px;
@@ -286,26 +254,12 @@ header nav .menu a{
     }
     
 }
-<<<<<<< HEAD
-@media only screen  and (min-width: 420px) and (max-width: 767px){
-=======
 @media only screen  and (min-width: 761px) and (max-width: 802px){
->>>>>>> 46a0b373d5f575a0bcabb188fe1e307b4d319952
     .container{
         width: 95vw;
         margin: 0 auto;
     }
     header{
-<<<<<<< HEAD
-            height: 15vh;
-    }
-    .main{
-        height: 85vh;
-    }
-    header nav{
-
-        padding: 10px 0;
-=======
         height: 16vh;
     }
     .main{
@@ -313,42 +267,23 @@ header nav .menu a{
     }
     header nav{
         padding: 12px 0;
->>>>>>> 46a0b373d5f575a0bcabb188fe1e307b4d319952
     
     }
     header .sub-div{
         font-size: 10px;
     }
-<<<<<<< HEAD
-    
-    header nav ul li a{
-        font-size: 12px;
-    }
-    header nav .nav-links ul{
-        display: flex;
-        justify-content: space-between;
-    }
-   
-=======
    
     header nav ul li a{
         font-size: 12px;
     }
-  
->>>>>>> 46a0b373d5f575a0bcabb188fe1e307b4d319952
     .btn-inscription a{
         padding: 4px 10px;
         font-size: 12px;
     }
-<<<<<<< HEAD
-    
-}
-=======
     .content-container h1{
         font-size: 36px;
         font-weight: 800px;
     }
-    
     .content-container p{
         font-size: 13px;
     }
@@ -360,8 +295,7 @@ header nav .menu a{
         width: 90vw;
         margin: 0 auto;
     }
-    
-    
+       
 }
 
 @media only screen  and (max-width: 761px){
@@ -501,15 +435,15 @@ header nav .menu a{
     height: 25vh;
 }
 
-.page2-home .offre-promotion h1 {
+.page3-home .offre-promotion h1 {
     font-size: 40px;
     padding: 20px;
     color: #370028;
 }
 
-.page2-home .offre-promotion p {
+.page3-home .offre-promotion p {
     color: #03224C;
     font-size: 18px;
 
 }
->>>>>>> 46a0b373d5f575a0bcabb188fe1e307b4d319952
+

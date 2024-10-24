@@ -209,6 +209,7 @@ header nav ul li a:hover{
    border-radius: 15px;
    height: 35px;
    width: 170px;
+   margin: 15px 0px;
    color: var(--hr-color);
    text-align: center;
 }
@@ -296,5 +297,129 @@ header nav ul li a:hover{
   .pagination a.active {
     background-color: rgba(71, 71, 71, 1);
     color: white;
-  }
+  }*
+/*product details start from here*/
+.dt-container{
+    width: 80vw;
+    margin: auto;
+}
+.dt-content{
+    display: flex;
+    gap: 50px;
+}
+.dt-container .dt-title{
+    text-align: center;
+    margin: 20px 0px;
+}
+.main-image{
+    width: 400px;
+    height: 360px;
+}
+.main-image img{
+    width: 100%;
+    height: 100%;
 
+}
+.sub-images{
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    height: 150;
+}
+ .sub-images img{
+    width: 30%;
+    height: 100%;
+    margin: 20px;
+}
+.text h3{
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+.text  h4{
+    margin: 10px;
+    letter-spacing: 2px;
+    color: var(--hr-color);
+    font-size: 1.5rem;
+}
+.text .rate{
+    font-size: 1.4rem;
+    display: flex;
+    align-content: center;
+}
+.text .rate img{
+    width: 150px;
+    margin:0px 20px;
+}
+
+.text .clrs{
+ margin-top: 20px;
+ font-size: 1.2rem;
+ font-weight: 500;
+}
+.text .pd-details{
+ display: flex;
+ gap: 3px;
+}
+.text .pd-details div{
+   width: 30px;
+   height: 30px;
+   margin: 20px;
+}
+.text .pd-details .color1{
+    background-color: rgba(88, 41, 0, 1);
+   
+}
+.text .pd-details .color2{
+    background-color: rgba(203, 159, 154, 1)
+}
+.text .pd-details .color3{
+    background-color: rgba(88, 41, 0, 1)
+}
+.selectioneer{
+    border: 2px solid blue;
+}
+.text h6{
+    font-size: 1.2rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin: 20px 0px;
+}
+.text .dt-description{
+    width: 90%;
+    font-weight: 200;
+    margin: 30px 0px;
+}
+.text .btns{
+    display: flex;
+    flex-direction: column;
+}
+.text .btns  button{
+    width: 90%;
+    margin: 10px 0px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    letter-spacing: 2px;
+}
+.text .btns .ajout{
+    background-color: rgba(174, 137, 100, 1);
+    color: #fff;
+    border: none;
+}
+.text .btns .ajout:hover{
+cursor: pointer;
+color:  rgba(174, 137, 100, 1);
+background-color: #fff;
+border: 1px solid  rgba(174, 137, 100, 1);;
+}
+.text .btns .Partager{
+    border: 2px solid  rgba(174, 137, 100, 1);
+    color:  rgba(174, 137, 100, 1);
+    font-weight: 600;
+    background-color: #fff;
+}
+.text .btns .Partager:hover{
+    color: #fff;
+    background-color: rgba(174, 137, 100, 1);
+    font-weight: 600;
+}

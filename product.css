@@ -12,6 +12,7 @@
     font-family: "Poppins", sans-serif;
     text-decoration: none;
 }
+/* adill version
 header{
     display: flex;
     justify-content: space-between;
@@ -39,7 +40,234 @@ header nav ul li a{
 }
 header nav ul li a:hover{
  color:  var(--hover-color);
+} */
+
+header .sub-div{
+    background-color: #AE8964;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 300;
 }
+
+.container{
+    width: 85vw;
+    margin: 0 auto;
+}
+
+header{
+    /* background-color: aqua; */
+    height: 20vh;
+    border-bottom: solid 2px var(--hr-color);
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: yellow; */
+    padding: 20px 0;
+
+}
+
+header .logo {
+    width: 35vw;
+    height: 10vh;
+    /* background-color: blue; */
+}
+header .logo img{
+    width: 30%;
+    height: 100%;
+}
+
+header nav .nav-links {
+    width: 45vw;
+    /* background-color: aqua; */
+}
+header nav .nav-links ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav ul li a{
+
+    background-color:#fff;
+    font-size: 15px;
+    color: var(--text-color);
+}
+header nav ul li a:hover{
+ color:  var(--hover-color);
+
+}
+.btn-inscription{
+    width: 15vw;
+    display: flex;
+    justify-content: flex-end;
+    /* background-color: red; */
+}
+.btn-inscription a{
+    padding: 6px 16px;
+    background-color: #582900;
+    color: #fff;
+    border-radius: 6px;
+}
+.btn-inscription a:hover{
+    background-color:  var(--hover-color);
+}
+header nav .menu a{
+   color: #582900;
+   display: none;
+}
+.content-container{
+    width: 85vw;
+    margin: 0 auto;
+    text-align: center;
+}
+
+@media only screen and (min-width: 961px) and (max-width: 1096px) {
+
+    header .sub-div{
+        font-size: 14px;
+    }
+    
+    header nav ul li a{
+        font-size: 14px;
+       
+    }
+    
+    .btn-inscription a{
+        padding: 4px 14px;
+        font-size: 15px;
+    }
+}
+@media only screen and (min-width: 900px) and (max-width: 960px){
+    header .sub-div{
+        font-size: 13px;
+    }
+    
+    header nav ul li a{
+        font-size: 13px;
+    }
+   
+    .btn-inscription a{
+        padding: 4px 12px;
+        font-size: 13px;
+    }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 960px){
+    header{
+        height: 18vh;
+    }
+    .main{
+        height: 82vh;
+    }
+    header nav{
+
+        padding: 18px 0;
+
+    }
+    header .sub-div{
+        font-size: 12px;
+    }
+    
+    header nav ul li a{
+        font-size: 13px;
+    }
+   
+    .btn-inscription a{
+        padding: 4px 12px;
+        font-size: 13px;
+    }
+
+}
+
+@media only screen  and (min-width:803px) and (max-width: 900px){
+    header{
+        height: 18vh;
+    }
+    
+    .main{
+        height: 82vh;
+    }
+    header nav{
+        padding: 18px 0;
+    }
+    header .sub-div{
+        font-size: 11px;
+    }
+    
+    header nav ul li a{
+        font-size: 13px;
+    }
+
+    .btn-inscription a{
+        padding: 4px 10px;
+        font-size: 13px;
+    }
+
+    .container{
+        width: 90vw;
+        margin: 0 auto;
+    }
+    
+}
+@media only screen  and (min-width: 761px) and (max-width: 802px){
+    .container{
+        width: 95vw;
+        margin: 0 auto;
+    }
+    header{
+        height: 16vh;
+    }
+    .main{
+        height: 84vh;
+    }
+    header nav{
+        padding: 12px 0;
+    
+    }
+    header .sub-div{
+        font-size: 10px;
+    }
+   
+    header nav ul li a{
+        font-size: 12px;
+    }
+    .btn-inscription a{
+        padding: 4px 10px;
+        font-size: 12px;
+    }
+    .container{
+        width: 90vw;
+        margin: 0 auto;
+    }
+       
+}
+
+@media only screen  and (max-width: 761px){
+    header nav .nav-links{
+        display: none;
+    }
+    .btn-inscription a{
+        display: none;
+    }
+    header .sub-div{
+        display: none;
+    }
+    header nav .menu a{
+        display: block;
+    }
+    header {
+        height: 12vh;      
+    }
+    header .logo {
+        width: 100vw;
+        height: 6vh;
+    }
+   
+}
+/*Header style End*/
+
 .top-bar{
     width: 100%;
     height: 30px;
@@ -135,10 +363,10 @@ header nav ul li a:hover{
     background-color: rgba(174, 137, 100, 0.4);
     border-radius: 10px;
     display: flex;
-    width: 50%;
+    width: 20vw;
 }
 .all .selection-bar p{
-    margin: 0px 30px;
+    margin: 0px 10px;
     font-size: 1.2rem;
     padding: 10px;
     width: 80px;
@@ -147,6 +375,7 @@ header nav ul li a:hover{
 }
 .content-product{
     max-width: 70%;
+    overflow-x: hidden;
 }
 .content-product .selection-bar p:hover{
     background-color: rgba(88, 41, 0, 0.43);
@@ -167,7 +396,7 @@ header nav ul li a:hover{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    gap: 20px;
+
 }
 
 .card{
@@ -180,6 +409,7 @@ header nav ul li a:hover{
     margin: 30px 0px;
     border-radius: 10px;
     transition: 200ms;
+    position: relative;
 }
 
 .card .product-image {
@@ -192,7 +422,14 @@ header nav ul li a:hover{
 .card .product-image img{
     width: 90%;
     height: 100%;
-
+   
+}
+.card i{
+    width: 100%;
+    text-align: center;
+    margin: 5px 0px;
+    font-size: 30px;
+    color: rgb(127, 115, 115);
 }
 .card .product-title{
     font-weight: 400;
@@ -223,9 +460,9 @@ header nav ul li a:hover{
     display: flex;
     justify-content: center;
     align-content: center;
-    width: 35%;
+    width: 300px;
     height: 120px;
-    background-color:rgba(174, 137, 100, 0.4);
+    background-color:rgba(71, 71, 71, 1);
     border-radius: 15px;
 }
 .seller .seller-image{
@@ -272,6 +509,7 @@ header nav ul li a:hover{
     justify-content: center;
     animation: scrolling 10s linear infinite;
     width: 100%;
+    height: 100%;
 }
  @keyframes scrolling {
     0% {
@@ -297,7 +535,7 @@ header nav ul li a:hover{
   .pagination a.active {
     background-color: rgba(71, 71, 71, 1);
     color: white;
-  }*
+  }
 /*product details start from here*/
 .dt-container{
     width: 80vw;
@@ -376,7 +614,7 @@ header nav ul li a:hover{
     background-color: rgba(88, 41, 0, 1)
 }
 .selectioneer{
-    border: 2px solid blue;
+    border: 2px solid rgb(244, 135, 1);
 }
 .text h6{
     font-size: 1.2rem;
@@ -423,3 +661,172 @@ border: 1px solid  rgba(174, 137, 100, 1);;
     background-color: rgba(174, 137, 100, 1);
     font-weight: 600;
 }
+@media only screen and (max-width: 1189px) {
+    .all .selection-bar p{
+        margin: 0px 10px;
+        font-size: 1rem;
+        padding: 10px;
+        width: 80px;
+        text-align: center;
+        transition :300ms ;
+    }
+    .card{
+        margin: 15px 0px;
+    }
+    .cards{
+        justify-content: center;
+        gap: 10px;
+    
+    }
+  }
+  @media only screen and (max-width: 1251px) {
+    .seller .seller-infos h4{
+        color: #fff;
+        font-weight: 400;
+        text-align: center;  
+        padding: 2px;
+    }
+  }
+  @media only screen and (max-width: 1394px) {
+    .seller .seller-infos span img{
+        width: 10px;
+        height: 10px;
+        margin: 5px 10px;
+    }
+    
+  }
+  @media only screen and (max-width: 1232px)and (min-width: 1189px) {
+    .all .selection-bar p{
+        margin: 0px 10px;
+        font-size: 0.9rem;
+        padding: 10px;
+        width: 80px;
+        text-align: center;
+        transition :300ms ;
+    }
+   
+    .cards{
+        justify-content: center;
+        gap: 5px;
+    
+    }
+
+  }
+  @media only screen and (max-width: 1069px) {
+    .all .selection-bar{
+        background-color: rgba(174, 137, 100, 0.4);
+        border-radius: 10px;
+        display: flex;
+        width: 30vw;
+    }
+   
+  }
+  @media only screen and (max-width: 711px) {
+    .all .selection-bar{
+        background-color: rgba(174, 137, 100, 0.4);
+        border-radius: 10px;
+        display: flex;
+        width: 40vw;
+    }
+   
+  }
+  @media only screen and (max-width: 540px) {
+    .all .selection-bar{
+        background-color: rgba(174, 137, 100, 0.4);
+        border-radius: 10px;
+        display: flex;
+        width: 60vw;
+    }
+    .all .selection-bar p{
+        font-size: 0.7rem;;
+        margin: 0;
+        margin: 5px;
+        width: 40px;
+        text-align: center;
+        transition :300ms ;
+    }
+  }
+  @media only screen and (max-width: 490px) {
+    .all .selection-bar{
+        background-color: rgba(174, 137, 100, 0.4);
+        border-radius: 10px;
+        display: flex;
+        width: 60vw;
+    }
+    .all .selection-bar p{
+        font-size: 0.7rem;;
+        margin: 0;
+        margin: 2px;
+        width: 40px;
+        text-align: center;
+        transition :300ms ;
+    }
+  }
+  @media (max-width: 451px) {
+    .all .selection-bar{
+        background-color: rgba(174, 137, 100, 0.4);
+        border-radius: 10px;
+        display: flex;
+        width: 60vw;
+    }
+    .all .selection-bar p{
+        font-size: 0.7rem;;
+        margin: 0;
+        margin: 0px;
+        width: 40px;
+        text-align: center;
+        transition :300ms ;
+    }
+    .product-category{
+    display: none;
+    }
+  }
+
+  @media  (max-width: 1241px)  and (min-width: 1129px){
+    .seller .seller-infos span{
+        color: #fff;
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+    }
+  }
+  @media  (max-width: 426px){
+
+    .sellers{
+        margin-top: 20px;
+    }
+    .all{
+      display: flex;
+      justify-content: center;
+    
+    }
+    .top-btn .sort-btn{
+        margin: 0 10px;
+        width: 115px;
+        height: 100%;
+        font-size:0.7rem;
+        font-weight: 500;
+        border-radius: 10px;
+        color: var(--hover-color);
+        background-color: #fff;
+        text-align: center;
+        transition: 200ms;
+    }
+    .top-btn input::placeholder {
+        padding: 2px;
+        color: rgba(174, 174, 174, 1);
+        font-size: 10px;
+      }
+      .pagination {
+        display: flex;
+        justify-content: center;
+      }
+      
+      .pagination a {
+        color: black;
+        float: left;
+        padding: 8px;
+        margin: 20px 0px;
+        text-decoration: none;
+      }
+  }

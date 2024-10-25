@@ -53,13 +53,13 @@
         <div class="all">
                     <div class="product-category">
                          <h1 class="category-title">Categories</h1>
-                        <h5>All Categories</h5>
+                        <h5 onclick="All_categories()">All Categories</h5>
                         <ul>
-                            <li><a href="#">Category 1</a></li>
-                            <li><a href="#">Category 2</a></li>
-                            <li><a href="#">Category 3</a></li>
-                            <li><a href="#">Category 4</a></li>              
-                            <li><a href="#">Category 5</a></li>            
+                            <li><a href="#" onclick="category_1()" class="cat-1">Category 1</a></li>
+                            <li><a href="#" onclick="category_2()" class="cat-2">Category 2</a></li>
+                            <li><a href="#" onclick="category_3()" class="cat-3">Category 3</a></li>
+                            <li><a href="#" onclick="category_4()" class="cat-4">Category 4</a></li>              
+                            <li><a href="#" onclick="category_5()" class="cat-5">Category 5</a></li>            
                          </ul>
                     </div>    
                     <div class="content-product">
@@ -311,7 +311,31 @@
         </div>
  
    <!-- content container end div--></div> 
-             
+   <footer>
+    <div class="footer-container">
+        <div class="part-1">
+            <h4>ArtisanCraft<br><span>Marketplace</span></h4>
+            <a href="">Inscription</a>
+        </div>
+        <!-- ------------------------------------------------ -->
+        <div class="part-2">
+                <div class="sub-nav">
+                    <a href="home.html">Accueil</a>
+                    <a href="about.html">À propos</a>
+                    <a href="product.html">Produits</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.x.com"><i class="fa-solid fa-x"></i></a>
+                    <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+                </div>
+        </div>
+       <!-- ------------------------------------------------- -->
+    </div>
+</footer>
+
 </body>
 <script>
     var i=0;
@@ -321,7 +345,517 @@
         count.innerHTML=i;
     }
     
+function category_1(){
+   var  content=document.querySelector(".cards");
+   var  cat_1=document.querySelector(".cat-1");
+   cat_1.classList.toggle("selected-cat");
+   content.innerHTML=``;
+   content.innerHTML=
+            `<div class="cards">
 
+                                        <!--Card 1 --> 
+                                            <div class="card">
+                                                    <div class="product-image">
+                                                        <img src="images/product-1.jpg">
+                                                    </div>
 
+                                                    <div class="product-title">
+                                                        <h2>Produit 1</h2>
+                                                    </div>
+
+                                                    <div class="product-description">
+                                                        <p>description for this product</p>
+                                                    </div>
+
+                                                    <div class="product-price">
+                                                        <span>199  DH</span>
+                                                    </div>
+
+                                                    <div class="product-btn">
+                                                            <button onclick="addcart()">Ajouter au pannier</button>
+                                                    </div>
+                                                    <a href="more-dtl.html"><i class="fa-solid fa-circle-info fa-2xs"></i></a>
+                                            </div>
+                                             <!--Card 2 --> 
+                                             <div class="card">
+                                                <div class="product-image">
+                                                    <img src="images/product-2.jpg">
+                                                </div>
+
+                                                <div class="product-title">
+                                                    <h2>Produit 2</h2>
+                                                </div>
+
+                                                <div class="product-description">
+                                                    <p>description for this product</p>
+                                                </div>
+
+                                                <div class="product-price">
+                                                    <span>199  DH</span>
+                                                </div>
+
+                                                <div class="product-btn">
+                                                        <button onclick="addcart()">Ajouter au pannier</button>
+                                                </div>
+                                                <a href="more-dtl.html"><i class="fa-solid fa-circle-info fa-2xs"></i></a>
+                                             </div>
+                                              <!--Card 3 --> 
+                                            <div class="card">
+                                                <div class="product-image">
+                                                    <img src="images/product-3.jpg">
+                                                </div>
+
+                                                <div class="product-title">
+                                                    <h2>Produit 3</h2>
+                                                </div>
+
+                                                <div class="product-description">
+                                                    <p>description for this product</p>
+                                                </div>
+
+                                                <div class="product-price">
+                                                    <span>199  DH</span>
+                                                </div>
+
+                                                <div class="product-btn">
+                                                        <button onclick="addcart()">Ajouter au pannier</button>
+                                                </div>
+                                                <a href="more-dtl.html"><i class="fa-solid fa-circle-info fa-2xs"></i></a>
+                                            </div>
+                                              <!--Card 5 --> 
+                                            <div class="card">
+                                                <div class="product-image">
+                                                    <img src="images/product -5.jpg">
+                                                </div>
+
+                                                <div class="product-title">
+                                                    <h2>Produit 5</h2>
+                                                </div>
+
+                                                <div class="product-description">
+                                                    <p>description for this product</p>
+                                                </div>
+
+                                                <div class="product-price">
+                                                    <span>199  DH</span>
+                                                </div>
+
+                                                <div class="product-btn">
+                                                        <button onclick="addcart()">Ajouter au pannier</button>
+                                                </div>
+                                                <a href="more-dtl.html"><i class="fa-solid fa-circle-info fa-2xs"></i></a>
+                                            </div>
+                                            
+                                        </div>`
+   
+}
+
+//category 2
+function category_2(){
+   var  content=document.querySelector(".cards");
+   var  cat_2=document.querySelector(".cat-2");
+   cat_2.classList.toggle("selected-cat");
+   content.innerHTML=``;
+   content.innerHTML=
+            `<div class="cards">
+                                              <!--Card 3 --> 
+                                            <div class="card">
+                                                <div class="product-image">
+                                                    <img src="images/product-3.jpg">
+                                                </div>
+
+                                                <div class="product-title">
+                                                    <h2>Produit 3</h2>
+                                                </div>
+
+                                                <div class="product-description">
+                                                    <p>description for this product</p>
+                                                </div>
+
+                                                <div class="product-price">
+                                                    <span>199  DH</span>
+                                                </div>
+
+                                                <div class="product-btn">
+                                                        <button onclick="addcart()">Ajouter au pannier</button>
+                                                </div>
+                                                <a href="more-dtl.html"><i class="fa-solid fa-circle-info fa-2xs"></i></a>
+                                            </div>
+                                              <!--Card 5 --> 
+                                            <div class="card">
+                                                <div class="product-image">
+                                                    <img src="images/product -5.jpg">
+                                                </div>
+
+                                                <div class="product-title">
+                                                    <h2>Produit 5</h2>
+                                                </div>
+
+                                                <div class="product-description">
+                                                    <p>description for this product</p>
+                                                </div>
+
+                                                <div class="product-price">
+                                                    <span>199  DH</span>
+                                                </div>
+
+                                                <div class="product-btn">
+                                                        <button onclick="addcart()">Ajouter au pannier</button>
+                                                </div>
+                                                <a href="more-dtl.html"><i class="fa-solid fa-circle-info fa-2xs"></i></a>
+                                            </div>
+                                            
+                                        </div>`
+   
+}
+//categorie 3
+function category_3(){
+   var  content=document.querySelector(".cards");
+   var  cat_3=document.querySelector(".cat-3");
+   cat_3.classList.toggle("selected-cat");
+   content.innerHTML=``;
+   content.innerHTML=
+            `<div class="cards">
+
+                                             <!--Card 2 --> 
+                                             <div class="card">
+                                                <div class="product-image">
+                                                    <img src="images/product-2.jpg">
+                                                </div>
+
+                                                <div class="product-title">
+                                                    <h2>Produit 2</h2>
+                                                </div>
+
+                                                <div class="product-description">
+                                                    <p>description for this product</p>
+                                                </div>
+
+                                                <div class="product-price">
+                                                    <span>199  DH</span>
+                                                </div>
+
+                                                <div class="product-btn">
+                                                        <button onclick="addcart()">Ajouter au pannier</button>
+                                                </div>
+                                                <a href="more-dtl.html"><i class="fa-solid fa-circle-info fa-2xs"></i></a>
+                                             </div>
+                                              
+                                             <!--Card 4 --> 
+                                             <div class="card">
+                                                <div class="product-image">
+                                                    <img src="images/product -4.jpg">
+                                                </div>
+
+                                                <div class="product-title">
+                                                    <h2>Produit 4</h2>
+                                                </div>
+
+                                                <div class="product-description">
+                                                    <p>description for this product</p>
+                                                </div>
+
+                                                <div class="product-price">
+                                                    <span>199  DH</span>
+                                                </div>
+
+                                                <div class="product-btn">
+                                                        <button onclick="addcart()">Ajouter au pannier</button>
+                                                </div>
+                                                <a href="more-dtl.html"><i class="fa-solid fa-circle-info fa-2xs"></i></a>
+                                             </div>
+                                             
+                                             <!--Card 6 --> 
+                                             <div class="card">
+                                                <div class="product-image">
+                                                    <img src="images/product-6.jpg">
+                                                </div>
+
+                                                <div class="product-title">
+                                                    <h2>Produit 6</h2>
+                                                </div>
+
+                                                <div class="product-description">
+                                                    <p>description for this product</p>
+                                                </div>
+
+                                                <div class="product-price">
+                                                    <span>199  DH</span>
+                                                </div>
+
+                                                <div class="product-btn">
+                                                        <button onclick="addcart()">Ajouter au pannier</button>
+                                                </div>
+                                                <a href="more-dtl.html"><i class="fa-solid fa-circle-info fa-2xs"></i></a>
+                                            </div>
+                                        </div>`
+   
+}
+//categorie 4
+function category_4(){
+   var  content=document.querySelector(".cards");
+   var  cat_4=document.querySelector(".cat-4");
+   cat_4.classList.toggle("selected-cat");
+   content.innerHTML=``;
+   content.innerHTML=
+            `<div class="cards">
+
+                                           
+                                             <!--Card 4 --> 
+                                             <div class="card">
+                                                <div class="product-image">
+                                                    <img src="images/product -4.jpg">
+                                                </div>
+
+                                                <div class="product-title">
+                                                    <h2>Produit 4</h2>
+                                                </div>
+
+                                                <div class="product-description">
+                                                    <p>description for this product</p>
+                                                </div>
+
+                                                <div class="product-price">
+                                                    <span>199  DH</span>
+                                                </div>
+
+                                                <div class="product-btn">
+                                                        <button onclick="addcart()">Ajouter au pannier</button>
+                                                </div>
+                                                <a href="more-dtl.html"><i class="fa-solid fa-circle-info fa-2xs"></i></a>
+                                             </div>
+                                             
+                                        </div>`
+   
+}
+//categorie 5
+function category_5(){
+   var  content=document.querySelector(".cards");
+   var  cat_5=document.querySelector(".cat-5");
+   cat_5.classList.toggle("selected-cat");
+   content.innerHTML=``;
+   content.innerHTML=
+            ` <div class="cards">
+                                             <!--Card 2 --> 
+                                             <div class="card">
+                                                <div class="product-image">
+                                                    <img src="images/product-2.jpg">
+                                                </div>
+
+                                                <div class="product-title">
+                                                    <h2>Produit 2</h2>
+                                                </div>
+
+                                                <div class="product-description">
+                                                    <p>description for this product</p>
+                                                </div>
+
+                                                <div class="product-price">
+                                                    <span>199  DH</span>
+                                                </div>
+
+                                                <div class="product-btn">
+                                                        <button onclick="addcart()">Ajouter au pannier</button>
+                                                </div>
+                                                <a href="more-dtl.html"><i class="fa-solid fa-circle-info fa-2xs"></i></a>
+                                             </div>
+          
+                                             <!--Card 4 --> 
+                                             <div class="card">
+                                                <div class="product-image">
+                                                    <img src="images/product -4.jpg">
+                                                </div>
+
+                                                <div class="product-title">
+                                                    <h2>Produit 4</h2>
+                                                </div>
+
+                                                <div class="product-description">
+                                                    <p>description for this product</p>
+                                                </div>
+
+                                                <div class="product-price">
+                                                    <span>199  DH</span>
+                                                </div>
+
+                                                <div class="product-btn">
+                                                        <button onclick="addcart()">Ajouter au pannier</button>
+                                                </div>
+                                                <a href="more-dtl.html"><i class="fa-solid fa-circle-info fa-2xs"></i></a>
+                                             </div>
+                                             <!--Card 6 --> 
+                                             <div class="card">
+                                                <div class="product-image">
+                                                    <img src="images/product-6.jpg">
+                                                </div>
+
+                                                <div class="product-title">
+                                                    <h2>Produit 6</h2>
+                                                </div>
+
+                                                <div class="product-description">
+                                                    <p>description for this product</p>
+                                                </div>
+
+                                                <div class="product-price">
+                                                    <span>199  DH</span>
+                                                </div>
+
+                                                <div class="product-btn">
+                                                        <button onclick="addcart()">Ajouter au pannier</button>
+                                                </div>
+                                                <a href="more-dtl.html"><i class="fa-solid fa-circle-info fa-2xs"></i></a>
+                                            </div>
+                                        </div>`
+   
+}
+//alll categories
+function All_categories(){
+   var  content=document.querySelector(".cards");
+   content.innerHTML=``;
+   content.innerHTML=
+            `   <div class="cards">
+
+                                        <!--Card 1 --> 
+                                            <div class="card">
+                                                    <div class="product-image">
+                                                        <img src="images/product-1.jpg">
+                                                    </div>
+
+                                                    <div class="product-title">
+                                                        <h2>Produit 1</h2>
+                                                    </div>
+
+                                                    <div class="product-description">
+                                                        <p>description for this product</p>
+                                                    </div>
+
+                                                    <div class="product-price">
+                                                        <span>199  DH</span>
+                                                    </div>
+
+                                                    <div class="product-btn">
+                                                            <button onclick="addcart()">Ajouter au pannier</button>
+                                                    </div>
+                                                    <a href="more-dtl.html"><i class="fa-solid fa-circle-info fa-2xs"></i></a>
+                                            </div>
+                                             <!--Card 2 --> 
+                                             <div class="card">
+                                                <div class="product-image">
+                                                    <img src="images/product-2.jpg">
+                                                </div>
+
+                                                <div class="product-title">
+                                                    <h2>Produit 2</h2>
+                                                </div>
+
+                                                <div class="product-description">
+                                                    <p>description for this product</p>
+                                                </div>
+
+                                                <div class="product-price">
+                                                    <span>199  DH</span>
+                                                </div>
+
+                                                <div class="product-btn">
+                                                        <button onclick="addcart()">Ajouter au pannier</button>
+                                                </div>
+                                                <a href="more-dtl.html"><i class="fa-solid fa-circle-info fa-2xs"></i></a>
+                                             </div>
+                                              <!--Card 3 --> 
+                                            <div class="card">
+                                                <div class="product-image">
+                                                    <img src="images/product-3.jpg">
+                                                </div>
+
+                                                <div class="product-title">
+                                                    <h2>Produit 3</h2>
+                                                </div>
+
+                                                <div class="product-description">
+                                                    <p>description for this product</p>
+                                                </div>
+
+                                                <div class="product-price">
+                                                    <span>199  DH</span>
+                                                </div>
+
+                                                <div class="product-btn">
+                                                        <button onclick="addcart()">Ajouter au pannier</button>
+                                                </div>
+                                                <a href="more-dtl.html"><i class="fa-solid fa-circle-info fa-2xs"></i></a>
+                                            </div>
+                                             <!--Card 4 --> 
+                                             <div class="card">
+                                                <div class="product-image">
+                                                    <img src="images/product -4.jpg">
+                                                </div>
+
+                                                <div class="product-title">
+                                                    <h2>Produit 4</h2>
+                                                </div>
+
+                                                <div class="product-description">
+                                                    <p>description for this product</p>
+                                                </div>
+
+                                                <div class="product-price">
+                                                    <span>199  DH</span>
+                                                </div>
+
+                                                <div class="product-btn">
+                                                        <button onclick="addcart()">Ajouter au pannier</button>
+                                                </div>
+                                                <a href="more-dtl.html"><i class="fa-solid fa-circle-info fa-2xs"></i></a>
+                                             </div>
+                                              <!--Card 5 --> 
+                                            <div class="card">
+                                                <div class="product-image">
+                                                    <img src="images/product -5.jpg">
+                                                </div>
+
+                                                <div class="product-title">
+                                                    <h2>Produit 5</h2>
+                                                </div>
+
+                                                <div class="product-description">
+                                                    <p>description for this product</p>
+                                                </div>
+
+                                                <div class="product-price">
+                                                    <span>199  DH</span>
+                                                </div>
+
+                                                <div class="product-btn">
+                                                        <button onclick="addcart()">Ajouter au pannier</button>
+                                                </div>
+                                                <a href="more-dtl.html"><i class="fa-solid fa-circle-info fa-2xs"></i></a>
+                                            </div>
+                                             <!--Card 6 --> 
+                                             <div class="card">
+                                                <div class="product-image">
+                                                    <img src="images/product-6.jpg">
+                                                </div>
+
+                                                <div class="product-title">
+                                                    <h2>Produit 6</h2>
+                                                </div>
+
+                                                <div class="product-description">
+                                                    <p>description for this product</p>
+                                                </div>
+
+                                                <div class="product-price">
+                                                    <span>199  DH</span>
+                                                </div>
+
+                                                <div class="product-btn">
+                                                        <button onclick="addcart()">Ajouter au pannier</button>
+                                                </div>
+                                                <a href="more-dtl.html"><i class="fa-solid fa-circle-info fa-2xs"></i></a>
+                                            </div>
+                                        </div>  `
+   
+}
 </script>
 </html>

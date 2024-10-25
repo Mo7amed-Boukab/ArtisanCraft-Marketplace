@@ -112,13 +112,9 @@ body {
   padding-left: 5px;
 }
 
-.forme input:hover,
-.forme textarea:hover {
-  background-color: #ae8964;
-}
-
 .forme textarea {
   height: 70px;
+  resize: none;
 }
 
 .div_1_2 h1 span {
@@ -238,4 +234,4 @@ body {
   font-size: 23px;
   color: #fbf9f9;
   text-align: center;
-}/*# sourceMappingURL=contact.css.map */
+}/*# sourceMappingURL=style_contact.css.map */

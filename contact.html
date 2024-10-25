@@ -20,7 +20,7 @@
             backdrop-filter: blur(50px);
             height: 100%;
             width: 100%;
-            opacity: 0.7 ;
+            opacity: 0.7;
         }
 
         .contact_3 {
@@ -58,20 +58,28 @@
                 <h1>Get In <span>Touch</span></h1>
                 <form id="contactForm" action="#" class="forme" method="POST">
                     <!-- <label for="Nom et Prenom">Nom & Prénom : </label> -->
-                    <input type="text"  id="name" name="name" placeholder="Nom & Prénom" required>
+                    <input type="text" id="name" name="name" placeholder="Nom & Prénom">
+                    <span id="text1"></span>
+
                     <!-- <label for="Numero de telephone">Numéro de telephone : </label> -->
-                    <input type="number"  placeholder="Numéro de telephone" required>
+                    <input type="tel" id="numeroTele" placeholder="Numéro de telephone">
+                    <span id="text2"></span>
+
                     <!-- <label for="Email">Email : </label> -->
-                    <input type="text" id="email" name="email" placeholder="Email" required>
+                    <input type="text" id="email" name="email" placeholder="Email">
+                    <span id="text3"></span>
+
                     <!-- <label for="Message">Votre Message : </label> -->
-                    <textarea name="message" id="message" required>Votre message</textarea>
+                    <textarea name="message" id="message" placeholder="Votre message"></textarea>
+                    <span id="text4"></span>
+
+                    <a href="#">
+                        <button type="submit">
+                            Envoyer Message
+                        </button>
+                    </a>
                 </form>
-                <a href="#">
-                    <button type="submit">
-                        Envoyer Message
-                    </button>
-                </a>
-                
+
             </div>
             <div class="div_2_2">
                 <div class="div_1_2_2">
@@ -120,16 +128,22 @@
             <div class="div_1_3">
                 <div class="div_1_3_1">
                     <h4>
-                        Découvrez l'art de l'artisanat, où chaque pièce raconte une histoire, et où le savoir-faire rencontre la créativité dans chaque détail.
+                        Découvrez l'art de l'artisanat, où chaque pièce raconte une histoire, et où le savoir-faire
+                        rencontre la créativité dans chaque détail.
                     </h4>
                 </div>
             </div>
         </section>
 
     </section>
-        <!-- footer  =============================================================================================================================================== -->
+    <!-- footer  =============================================================================================================================================== -->
 
 
+    <script src="js/valider_donnees.js"></script>
+    <script src="js/valider_nom_prenom.js"></script>
+    <script src="js/valider_numero_tele.js"></script>
+    <script src="js/valider_email.js"></script>
+    <script src="js/valider_message.js"></script>
 </body>
 
 </html>

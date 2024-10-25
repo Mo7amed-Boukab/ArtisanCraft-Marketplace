@@ -19,7 +19,7 @@
                 <img src="./images/logo.svg" alt="">
             </div>
             <!-- div 2-------------- -->
-            <div class="nav-links">
+            <div id="navtoggle" class="nav-links" class="display">
                 <ul>
                     <li><a href="home.html">Accueil</a></li>
                     <li><a href="about.html">À propos</a></li>
@@ -32,10 +32,10 @@
              <div  class="btn-inscription">                
                     <a href="#">Inscription</a>
             </div>
-            <div class="menu">
-                <a href="#"><span class="material-symbols-outlined">menu</span></a>
+            <div id="sideBar" class="menu">
+                <a href="#" ><span class="material-symbols-outlined">menu</span></a>
             </div>
-             
+            
         </nav>
     </header>
     <!-- -------------------------------  main section ----------------------------- -->
@@ -201,5 +201,12 @@
                <!-- ------------------------------------------------- -->
             </div>
         </footer> 
+        <script>
+            const sideBar = document.getElementById("sideBar");
+            const elementDisplay = document.getElementById("navtoggle");
+             sideBar.onclick = function(){
+            elementDisplay.classList.toggle("display");
+            }  
+        </script> 
 </body>
 </html>

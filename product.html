@@ -44,8 +44,11 @@
         <section class="top-btn">
             <input type="text" placeholder="Search items, collections, and accounts">
             <button class="sort-btn"> Sort By<img src="images/Icon-1.png"></button>
-
-            <a href="#"><img src="images/shop.svg" class="shop-icon"></a>
+            <div class="panier">
+                <a href="#"><img src="images/shop.svg" class="shop-icon"></a>
+                <p class="count">0</p>
+            </div>
+            
         </section>
         <div class="all">
                     <div class="product-category">
@@ -62,8 +65,8 @@
                     <div class="content-product">
                                 <div class="selection-bar">
                                         <p class="active">All </p>
-                                        <p>Items</p>
-                                        <p>Sellers</p>
+                                        </a><p>Items</p>
+                                        </a><p>Sellers</p>
                                 </div>
                                 <section class="product-sellers-section">
                                     <div class="cards">
@@ -87,7 +90,7 @@
                                                     </div>
 
                                                     <div class="product-btn">
-                                                            <button>Ajouter au pannier</button>
+                                                            <button onclick="addcart()">Ajouter au pannier</button>
                                                     </div>
                                                     <a href="more-dtl.html"><i class="fa-solid fa-circle-info fa-2xs"></i></a>
                                             </div>
@@ -110,7 +113,7 @@
                                                 </div>
 
                                                 <div class="product-btn">
-                                                        <button>Ajouter au pannier</button>
+                                                        <button onclick="addcart()">Ajouter au pannier</button>
                                                 </div>
                                                 <a href="more-dtl.html"><i class="fa-solid fa-circle-info fa-2xs"></i></a>
                                              </div>
@@ -133,7 +136,7 @@
                                                 </div>
 
                                                 <div class="product-btn">
-                                                        <button>Ajouter au pannier</button>
+                                                        <button onclick="addcart()">Ajouter au pannier</button>
                                                 </div>
                                                 <a href="more-dtl.html"><i class="fa-solid fa-circle-info fa-2xs"></i></a>
                                             </div>
@@ -156,7 +159,7 @@
                                                 </div>
 
                                                 <div class="product-btn">
-                                                        <button>Ajouter au pannier</button>
+                                                        <button onclick="addcart()">Ajouter au pannier</button>
                                                 </div>
                                                 <a href="more-dtl.html"><i class="fa-solid fa-circle-info fa-2xs"></i></a>
                                              </div>
@@ -179,7 +182,7 @@
                                                 </div>
 
                                                 <div class="product-btn">
-                                                        <button>Ajouter au pannier</button>
+                                                        <button onclick="addcart()">Ajouter au pannier</button>
                                                 </div>
                                                 <a href="more-dtl.html"><i class="fa-solid fa-circle-info fa-2xs"></i></a>
                                             </div>
@@ -202,7 +205,7 @@
                                                 </div>
 
                                                 <div class="product-btn">
-                                                        <button>Ajouter au pannier</button>
+                                                        <button onclick="addcart()">Ajouter au pannier</button>
                                                 </div>
                                                 <a href="more-dtl.html"><i class="fa-solid fa-circle-info fa-2xs"></i></a>
                                             </div>
@@ -310,4 +313,15 @@
    <!-- content container end div--></div> 
              
 </body>
+<script>
+    var i=0;
+    function addcart(){
+        var count=document.querySelector('.count');
+        i++;
+        count.innerHTML=i;
+    }
+    
+
+
+</script>
 </html>

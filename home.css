@@ -7,7 +7,7 @@
     font-family: "Poppins", sans-serif;
     text-decoration: none
 }
-
+/*  ----------- start header ---------- */
 :root {
     --hover-color: #AE8964;
     --text-color: black;
@@ -57,8 +57,6 @@ header nav .nav-links ul{
 }
 
 header nav ul li a{
-
-    background-color:#fff;
     font-size: 15px;
     color: var(--text-color);
 }
@@ -84,6 +82,10 @@ header nav .menu a{
    color: #582900;
    display: none;
 }
+
+/* ----------------- end header  */
+
+/* ------------ main first page home ------------- */
 .main{
     height: 80vh;
     background-image: url("./images/background-home.svg");
@@ -113,7 +115,8 @@ header nav .menu a{
 }
 .home-content-container a{
     background-color: rgba(88, 41, 0, 0.7);
-    color: #ffffff;  padding: 10px 20px; 
+    color: #ffffff; 
+    padding: 10px 20px; 
     display: inline-block;
     margin: 10px 0;
     border-radius: 20px;
@@ -122,6 +125,7 @@ header nav .menu a{
 .home-content-container a:hover{
     background-color: #582900;
 }
+/* -------------------- header responsive 1 ------------------ */
 @media only screen and (min-width: 961px) and (max-width: 1096px) {
 
     header .sub-div{
@@ -129,14 +133,13 @@ header nav .menu a{
     }
     
     header nav ul li a{
-        font-size: 14px;
-       
+        font-size: 14px;  
     }
-    
     .btn-inscription a{
         padding: 4px 14px;
         font-size: 15px;
     }
+    /* ------------------ end header -------------------------- */
     .content-container h1{
         font-weight: 800;
         font-size: 40px;
@@ -150,7 +153,10 @@ header nav .menu a{
         padding: 7px 14px; 
         font-size: 14px;
     }
+
 }
+/* -------------------- end responsive 1 ----------------------- */
+/* --------------------- header responsive 2 ----------------- */
 @media only screen and (min-width: 900px) and (max-width: 960px){
     header .sub-div{
         font-size: 13px;
@@ -164,6 +170,7 @@ header nav .menu a{
         padding: 4px 12px;
         font-size: 13px;
     }
+    /* ------------- end header --------------- */
     .home-content-container h1{
         font-size: 38px;
     }
@@ -176,6 +183,8 @@ header nav .menu a{
         font-size: 14px;
     }
 }
+/* ----------------end responsive 2 ---------------------------- */
+/*  ----------------- header responsive 3 --------------------- */
 
 @media only screen and (min-width: 900px) and (max-width: 960px){
     header{
@@ -207,6 +216,8 @@ header nav .menu a{
     }
 }
 
+/* ----------------------end responsive 3 ----------------------- */
+/* ---------------- header responsive 4 ----------------------- */
 @media only screen  and (min-width:803px) and (max-width: 900px){
     header{
         height: 18vh;
@@ -230,6 +241,11 @@ header nav .menu a{
         padding: 4px 10px;
         font-size: 13px;
     }
+    .container{
+        width: 90vw;
+        margin: 0 auto;
+    }
+  /*  ----------- end header ----------------------------- */
     .home-content-container h1{
         font-size: 38px;
     }
@@ -241,12 +257,12 @@ header nav .menu a{
         padding: 6px 12px; 
         font-size: 14px;
     }
-    .container{
-        width: 90vw;
-        margin: 0 auto;
-    }
+    
     
 }
+
+/* -------------------------end responsive 4 ----------------------- */
+/* --------------- header responsive 5 ------------------------ */
 @media only screen  and (min-width: 761px) and (max-width: 802px){
     .container{
         width: 95vw;
@@ -273,6 +289,11 @@ header nav .menu a{
         padding: 4px 10px;
         font-size: 12px;
     }
+    .container{
+        width: 90vw;
+        margin: 0 auto;
+    }
+       /* --------------- end header ---------------------- */
     .home-content-container h1{
         font-size: 36px;
         font-weight: 800px;
@@ -284,42 +305,70 @@ header nav .menu a{
         padding: 6px 12px; 
         font-size: 13px;
     }
-    .container{
-        width: 90vw;
-        margin: 0 auto;
-    }
-       
+   
 }
 
+/* ------------------------------end responsive 5 ----------------------- */
+/* -------------------- header responsive 6 ------------------------- */
+.display{
+    display: none;
+}
 @media only screen  and (max-width: 761px){
-    header nav .nav-links{
-        display: none;
-    }
-    .btn-inscription a{
-        display: none;
-    }
     header .sub-div{
         display: none;
     }
+    header nav .nav-links{
+     
+        position: absolute;
+        top: 12vh;
+        right: 0;
+        width: 50vw;
+        height: 88vh;
+        background-color: rgb(139, 139, 139);
+    }
+    header nav .nav-links ul{
+       display: flex;
+       flex-direction: column;
+       gap: 20px;
+       text-align: center;
+       width: 100%;
+
+    }
+    
+    header nav ul li {
+        width: 100%;
+        padding: 14px;
+        background-color: #5a5a5a;
+    }
+    header nav ul li a{
+        color: #fff;
+    }
+    
+    .btn-inscription a{
+        display: none;
+    }
+ 
     header nav .menu a{
         display: block;
     }
     header {
         height: 12vh;      
     }
-    .main{
-        height: 88vh;
-    
-    }
+  
     header .logo {
         width: 100vw;
         height: 6vh;
     }
+    /* ------------- end header -------------------- */
     .home-content-container h1{
         font-size: 40px;
         font-weight: 900px;
     }
+   
+    .main{
+        height: 88vh;
     
+    }
     .home-content-container p{
         font-size: 13px;
     }
@@ -329,6 +378,8 @@ header nav .menu a{
     }
    
 }
+
+/* ------------------------------end responsive 6 ----------------------- */
 /* ----------------------- page 2 home -------------------- */
 .page2-home {
     width: 85vw;
@@ -379,7 +430,7 @@ header nav .menu a{
 }
 
 .page2-home .details {
-    background-color: #d9d9d998;
+    background-color: #d9d9d9;
     height: 200px;
     border-radius: 12px;
     text-align: center;
@@ -413,8 +464,13 @@ header nav .menu a{
 .page2-home .details a:hover {
     background-color: #474747;
 }
-@media only screen and (min-width: 370px) and (max-width: 440px) {
+/* ------------------ header responsive 7 ---------------- */
+/* ----------- nav bar less than 440px --------- */
+@media only screen and (min-width: 320px) and (max-width: 440px) {
   
+    header nav ul li a{
+        color: #fff;
+    }
     .page2-home .prd-phare h1 {
         font-size: 36px;
     }
@@ -423,18 +479,64 @@ header nav .menu a{
        font-size: 15px;
     
     }
+    header nav .nav-links{
+        position: absolute;
+        right: 0;
+        width: 60vw;
+        height: calc(100vh - 12vh);
+        background-color: rgb(139, 139, 139);
+    }
+    header nav .nav-links ul{
+       display: flex;
+       flex-direction: column;
+       gap: 20px;
+       text-align: center;
+    }
+    
+    header nav ul li {
+        width: 100%;
+        padding: 14px;
+        background-color: #5a5a5a;
+    }
+    header nav ul li a{
+        color: #fff;
+    }
 }
-@media only screen and (max-width: 370px) {
+/* ---------------- header responsive 8 ----------------------- */
+/* ----------- nav bar less than 320px --------- */
+@media only screen and (max-width: 320px) {
     .page2-home .prd-phare h1 {
         font-size: 35px;
     }
     
     .page2-home .prd-phare p {
-       font-size: 14px;
+        font-size: 14px;
+    }
+
+    header nav ul li a{
+        color: #fff;
+    }
+    header nav .nav-links{
+        position: absolute;
+        right: 0;
+        width: 100vw;
+        height: 82vh;
+        background-color: rgb(139, 139, 139);
+    }
+    header nav .nav-links ul{
+       display: flex;
+       flex-direction: column;
+       gap: 20px;
+       text-align: center;   
+    }
     
+    header nav ul li {
+        width: 100%;
+        padding: 14px;
+        background-color: #5a5a5a;
     }
 }
-
+/* ----------------------------- end responsive 8 ---------------------------- */
 /* ----------------------------------- end page 2 home -------------------------- */
 .page3-home {
     width: 85vw;
@@ -726,7 +828,7 @@ p {
    padding: 30px;
    border-bottom: 2px solid #AE8964; 
 }
-/* ----------------- footer ---------------------*/
+
 .footer-container {
     width: 90%;
     margin: 0 auto;

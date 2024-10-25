@@ -124,13 +124,9 @@ body {
   padding-left: 5px;
 }
 
-.forme input:hover,
-.forme textarea:hover {
-  background-color: $color_2;
-}
-
 .forme textarea {
   height: 70px;
+  resize: none ;
 }
 
 .div_1_2 h1 span {

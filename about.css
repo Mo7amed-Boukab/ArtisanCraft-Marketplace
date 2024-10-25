@@ -28,7 +28,7 @@ body {
 .first_h h1 {
   color: white;
   font-size: 40px;
-  /* text-align: center; */
+  
 }
 .about1 {
   display: grid;
@@ -151,12 +151,7 @@ h1 {
   .about1 {
     margin-top: 20px;
   }
-  /* .img4{
-        
-        height: 400px;
-        
-       
-    } */
+ 
   .about1,
   .about2,
   .about3 {
@@ -346,7 +341,7 @@ footer{
   
    
 
-    .img4 img{ height: 30vh;}
+    .img4 img{ height: 40vh;}
    
 
   .first_h h1{
@@ -360,7 +355,7 @@ footer{
   
     justify-content: center;
     align-items: center;
-    margin-top: -40px;
+    margin-top: 0px;
     /* justify-items: center; */
   }
 
@@ -380,7 +375,6 @@ footer{
   .about2 {
     display: flex;
     flex-direction: column-reverse;
-    /* justify-items: center; */
     align-items: center;
     justify-content: center;
     width: 100%;

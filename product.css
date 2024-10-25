@@ -319,10 +319,23 @@ header nav .menu a{
     cursor: pointer;
     color: #fff;
 }
-
+.panier{
+    position: relative;
+}
 .top-btn img{
  width: 28px;
- padding: 5px;
+ padding: 12px;
+}
+.top-btn .count{
+    padding: 2px;
+    position: absolute;
+    font-weight: bold;
+    font-size: 1rem;
+    color: rgb(251, 0, 0);
+    background-color :white;    
+    border-radius: 50%;
+    top: 0;
+    left: 0;
 }
 .top-btn button{
     display: flex;

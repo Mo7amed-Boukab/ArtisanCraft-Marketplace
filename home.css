@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 *{
@@ -427,7 +428,7 @@ header nav .menu a{
 }
 
 .page2-home .details {
-    background-color: #d9d9d9;
+    background-color: #d9d9d97d;
     height: 200px;
     border-radius: 12px;
     text-align: center;
@@ -459,7 +460,7 @@ header nav .menu a{
 }
 
 .page2-home .details a:hover {
-    background-color: #03224C;
+    background-color: #290c0c;
 }
 /* ------------------ header responsive 7 ---------------- */
 /* ----------- nav bar less than 440px --------- */
@@ -600,14 +601,14 @@ header nav .menu a{
     width: fit-content;
     font-size: 14px;
     padding: 6px 14px;
-    background-color: #03224C;
+    background-color: #474747;
     color:#ffffff;
     border: none;
     border-radius: 6px;
     cursor: pointer;  
 }
 .offer_sec1-details a:hover{
-    background-color: #474747;
+    background-color: #290c0c;
 }
 
 .offre_sec2 h2{
@@ -636,14 +637,14 @@ header nav .menu a{
 .offre_sec2 a{
     font-size: 14px;
     padding: 7px 14px;
-    background-color: #03224C;
+    background-color: #474747;
     color:#ffffff;
     border: none;
     border-radius: 6px;
     cursor: pointer;  
 }
 .offre_sec2 a:hover{
-    background-color: #474747;
+    background-color: #290c0c;
 }
 @media only screen and (min-width: 440px) and (max-width: 836px){
     .page3-home .offre-promotion h1 {

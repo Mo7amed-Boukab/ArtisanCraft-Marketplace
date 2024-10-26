@@ -459,7 +459,7 @@ header nav .menu a{
 }
 
 .page2-home .details a:hover {
-    background-color: #03224C;
+    background-color: #290c0c;
 }
 /* ------------------ header responsive 7 ---------------- */
 /* ----------- nav bar less than 440px --------- */
@@ -600,14 +600,14 @@ header nav .menu a{
     width: fit-content;
     font-size: 14px;
     padding: 6px 14px;
-    background-color: #03224C;
+    background-color: #474747;
     color:#ffffff;
     border: none;
     border-radius: 6px;
     cursor: pointer;  
 }
 .offer_sec1-details a:hover{
-    background-color: #474747;
+    background-color: #290c0c;
 }
 
 .offre_sec2 h2{
@@ -636,14 +636,14 @@ header nav .menu a{
 .offre_sec2 a{
     font-size: 14px;
     padding: 7px 14px;
-    background-color: #03224C;
+    background-color: #474747;
     color:#ffffff;
     border: none;
     border-radius: 6px;
     cursor: pointer;  
 }
 .offre_sec2 a:hover{
-    background-color: #474747;
+    background-color: #290c0c;
 }
 @media only screen and (min-width: 440px) and (max-width: 836px){
     .page3-home .offre-promotion h1 {

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
     <title>Detaile Produit</title>
 </head>
 <body>
@@ -11,12 +12,11 @@
         <div class="sub-div">Découvrez nos artisans locaux au Maroc ! Profitez de la livraison gratuite pour toute commande supérieure à 99 MAD !</div>
         <nav class="container">
             <!-- div 1-------------- -->
-            <!-- <div class="logo"> ArtisaCraft<br><span>Marketplace</span> </div> -->
             <div class="logo">
                 <img src="./images/logo.svg" alt="">
             </div>
             <!-- div 2-------------- -->
-            <div class="nav-links">
+            <div id="navtoggle" class="nav-links" class="display">
                 <ul>
                     <li><a href="home.html">Accueil</a></li>
                     <li><a href="about.html">À propos</a></li>
@@ -26,15 +26,14 @@
                 </ul>
             </div>
             <!-- div 3-------------- -->
-             <div  class="btn-inscription">
+             <div  class="btn-inscription">                
                     <a href="#">Inscription</a>
             </div>
-            <div class="menu">
-                <a href="#"><span class="material-symbols-outlined">menu</span></a>
-            </div>
-
+            <div id="sideBar" class="menu">
+                <a href="#" ><span class="material-symbols-outlined">menu</span></a>
+            </div>       
         </nav>
-    </header>   
+    </header> 
     <div class="dt-container">
                 <div class="dt-title">
                     <h1>Détails du Produit</h1>
@@ -42,12 +41,13 @@
             <div class="dt-content">
                     <div class="images">
                                 <div class="main-image">
-                                    <img src="images/main-dt-product.webp">
+                                    <img src="/images/product-details.jpg">
                                 </div>
                                 <div class="sub-images">
-                                    <img src="images/main-dt-product.webp" class="selectioneer">
-                                    <img src="images/sub-dt-product-1.webp">
-                                    <img src="images/sub-dt-product-2.webp">
+                                    <img src="images/product-details1.jpg" class="selectioneer">
+                                    <img src="images/product-details3.jpg">
+                                    <img src="images/product-details2.jpg">
+                                    
                                 </div>
                     </div>
                     <div class="text">
@@ -93,5 +93,12 @@
            <!-- ------------------------------------------------- -->
         </div>
     </footer>
+    <script>
+        const sideBar = document.getElementById("sideBar");
+        const elementDisplay = document.getElementById("navtoggle");
+         sideBar.onclick = function(){
+        elementDisplay.classList.toggle("display");
+        }
+    </script>
 </body>
 </html>

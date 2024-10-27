@@ -7,8 +7,7 @@
     <link rel="stylesheet" href="product.css">
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
 </head>
 <body>
@@ -38,10 +37,11 @@
             </div>       
         </nav>
     </header>
+    <!-- ------------------------ content product page ----------------------- -->
     <div class="content-container">
         <section class="top-btn">
             <input type="text" placeholder="Search items, collections, and accounts">
-            <button class="sort-btn"> Sort By<img src="images/Icon-1.png"></button>
+            <button class="sort-btn"> rechercher</button>
             <div class="panier">
                 <a href="#"><img src="images/shop.svg" class="shop-icon"></a>
                 <p class="count">0</p>
@@ -49,42 +49,48 @@
             
         </section>
         <div class="all">
+            <!-- ------------------ side bar => catégories of products ----------- -->
                     <div class="product-category">
                          <h1 class="category-title">Categories</h1>
-                        <h5 onclick="All_categories()">All Categories</h5>
+                        <h5 onclick="All_categories()">Tous les categories</h5>
                         <ul>
-                            <li><a href="#" onclick="category_1()" class="cat-1">Category 1</a></li>
-                            <li><a href="#" onclick="category_2()" class="cat-2">Category 2</a></li>
-                            <li><a href="#" onclick="category_3()" class="cat-3">Category 3</a></li>
-                            <li><a href="#" onclick="category_4()" class="cat-4">Category 4</a></li>              
-                            <li><a href="#" onclick="category_5()" class="cat-5">Category 5</a></li>            
+                            <li><a href="#" onclick="category_1()" class="cat-1">Sélection Populaire</a></li>
+                            <li><a href="#" onclick="category_2()" class="cat-2">Textiles Traditionnels </a></li>
+                            <li><a href="#" onclick="category_3()" class="cat-3">Vaisselle Artisanale</a></li>
+                            <li><a href="#" onclick="category_4()" class="cat-4">Pièces Uniques</a></li>              
+                            <li><a href="#" onclick="category_5()" class="cat-5">Meilleures Ventes</a></li>            
                          </ul>
-                    </div>    
+                    </div>   
+              <!-------------------------------- Perent main section products ----------------------------->
+              
                     <div class="content-product">
+                        <!--------------  top slider bar -------------->
                                 <div class="selection-bar">
-                                        <p class="active">All </p>
-                                        </a><p>Items</p>
-                                        </a><p>Sellers</p>
+                                        <p class="active">Tous </p>
+                                        <a href="#articles"><p>Articles</p></a>
+                                       <a href="#sellers"><p>vendeurs</p></a>
                                 </div>
+                        <!---------------------------------------------->
+                    <!-------------------------- Product main section -------------------------->
                                 <section class="product-sellers-section">
-                                    <div class="cards">
+                                    <div id="articles" class="cards">
 
                                         <!--Card 1 --> 
                                             <div class="card">
                                                     <div class="product-image">
-                                                        <img src="images/product-1.jpg">
+                                                        <img src="/images/product-1.jpg">
                                                     </div>
 
                                                     <div class="product-title">
-                                                        <h2>Produit 1</h2>
+                                                        <h4>Lanterne Artisanale</h4>
                                                     </div>
 
                                                     <div class="product-description">
-                                                        <p>description for this product</p>
+                                                        <p>Lanterne Artisanal ideal pour éclairez votre espace</p>
                                                     </div>
 
                                                     <div class="product-price">
-                                                        <span>199  DH</span>
+                                                        <span>149  DH</span>
                                                     </div>
 
                                                     <div class="product-btn">
@@ -95,19 +101,19 @@
                                              <!--Card 2 --> 
                                              <div class="card">
                                                 <div class="product-image">
-                                                    <img src="images/product-2.jpg">
+                                                    <img src="/images/product-2.jpg">
                                                 </div>
 
                                                 <div class="product-title">
-                                                    <h2>Produit 2</h2>
+                                                    <h4>Assiette Artisanale</h4>
                                                 </div>
 
                                                 <div class="product-description">
-                                                    <p>description for this product</p>
+                                                    <p>Assiette en céramique peinte à la main</p>
                                                 </div>
 
                                                 <div class="product-price">
-                                                    <span>199  DH</span>
+                                                    <span>129  DH</span>
                                                 </div>
 
                                                 <div class="product-btn">
@@ -118,19 +124,19 @@
                                               <!--Card 3 --> 
                                             <div class="card">
                                                 <div class="product-image">
-                                                    <img src="images/product-3.jpg">
+                                                    <img src="/images/product-3.jpg">
                                                 </div>
 
                                                 <div class="product-title">
-                                                    <h2>Produit 3</h2>
+                                                    <h4>Coussin Artisanal</h4>
                                                 </div>
 
                                                 <div class="product-description">
-                                                    <p>description for this product</p>
+                                                    <p>Coussin en coton, brodé à la main</p>
                                                 </div>
 
                                                 <div class="product-price">
-                                                    <span>199  DH</span>
+                                                    <span>99  DH</span>
                                                 </div>
 
                                                 <div class="product-btn">
@@ -141,19 +147,19 @@
                                              <!--Card 4 --> 
                                              <div class="card">
                                                 <div class="product-image">
-                                                    <img src="images/product -4.jpg">
+                                                    <img src="/images/produit-4.jpg">
                                                 </div>
 
                                                 <div class="product-title">
-                                                    <h2>Produit 4</h2>
+                                                    <h4>Tasse Artisanale</h4>
                                                 </div>
 
                                                 <div class="product-description">
-                                                    <p>description for this product</p>
+                                                    <p>Tasse en céramique décorée de motifs andalous</p>
                                                 </div>
 
                                                 <div class="product-price">
-                                                    <span>199  DH</span>
+                                                    <span>129  DH</span>
                                                 </div>
 
                                                 <div class="product-btn">
@@ -164,19 +170,19 @@
                                               <!--Card 5 --> 
                                             <div class="card">
                                                 <div class="product-image">
-                                                    <img src="images/product -5.jpg">
+                                                    <img src="/images/product-5.jpg">
                                                 </div>
 
                                                 <div class="product-title">
-                                                    <h2>Produit 5</h2>
+                                                    <h4>Textiles Artisanaux</h4>
                                                 </div>
 
                                                 <div class="product-description">
-                                                    <p>description for this product</p>
+                                                    <p>Textiles Traditionnels en coton brodé à la main </p>
                                                 </div>
 
                                                 <div class="product-price">
-                                                    <span>199  DH</span>
+                                                    <span>199 DH</span>
                                                 </div>
 
                                                 <div class="product-btn">
@@ -187,15 +193,15 @@
                                              <!--Card 6 --> 
                                              <div class="card">
                                                 <div class="product-image">
-                                                    <img src="images/product-6.jpg">
+                                                    <img src="/images/produit-6.jpg">
                                                 </div>
 
                                                 <div class="product-title">
-                                                    <h2>Produit 6</h2>
+                                                    <h4>Vaisselle Artisanale</h4>
                                                 </div>
 
                                                 <div class="product-description">
-                                                    <p>description for this product</p>
+                                                    <p>Vaisselle en céramique peinte à la main</p>
                                                 </div>
 
                                                 <div class="product-price">
@@ -209,7 +215,7 @@
                                             </div>
                                         </div>
                                     
-                                    <div class="sellers">
+                                    <div id="sellers" class="sellers">
                                         <!-- seller-1 -->
                                         <div class="seller frame">
                                                 <div class="seller-image">
@@ -354,19 +360,19 @@ function category_1(){
                                         <!--Card 1 --> 
                                             <div class="card">
                                                     <div class="product-image">
-                                                        <img src="images/product-1.jpg">
+                                                        <img src="/images/product-1.jpg">
                                                     </div>
 
                                                     <div class="product-title">
-                                                        <h2>Produit 1</h2>
+                                                        <h4>Lanterne Artisanale</h4>
                                                     </div>
 
                                                     <div class="product-description">
-                                                        <p>description for this product</p>
+                                                        <p>Lanterne Artisanal ideal pour éclairez votre espace</p>
                                                     </div>
 
                                                     <div class="product-price">
-                                                        <span>199  DH</span>
+                                                        <span>149  DH</span>
                                                     </div>
 
                                                     <div class="product-btn">
@@ -374,22 +380,23 @@ function category_1(){
                                                     </div>
                                                     <a href="more-dtl.html"><i class="fa-solid fa-circle-info fa-2xs"></i></a>
                                             </div>
-                                             <!--Card 2 --> 
+                                            
+                                            <!--Card 2 --> 
                                              <div class="card">
                                                 <div class="product-image">
-                                                    <img src="images/product-2.jpg">
+                                                    <img src="/images/product-2.jpg">
                                                 </div>
 
                                                 <div class="product-title">
-                                                    <h2>Produit 2</h2>
+                                                    <h4>Assiette Artisanale</h4>
                                                 </div>
 
                                                 <div class="product-description">
-                                                    <p>description for this product</p>
+                                                    <p>Assiette en céramique peinte à la main</p>
                                                 </div>
 
                                                 <div class="product-price">
-                                                    <span>199  DH</span>
+                                                    <span>129  DH</span>
                                                 </div>
 
                                                 <div class="product-btn">
@@ -400,19 +407,19 @@ function category_1(){
                                               <!--Card 3 --> 
                                             <div class="card">
                                                 <div class="product-image">
-                                                    <img src="images/product-3.jpg">
+                                                    <img src="/images/product-3.jpg">
                                                 </div>
 
                                                 <div class="product-title">
-                                                    <h2>Produit 3</h2>
+                                                    <h4>Coussin Artisanal</h4>
                                                 </div>
 
                                                 <div class="product-description">
-                                                    <p>description for this product</p>
+                                                    <p>Coussin en coton, brodé à la main</p>
                                                 </div>
 
                                                 <div class="product-price">
-                                                    <span>199  DH</span>
+                                                    <span>99  DH</span>
                                                 </div>
 
                                                 <div class="product-btn">
@@ -420,31 +427,8 @@ function category_1(){
                                                 </div>
                                                 <a href="more-dtl.html"><i class="fa-solid fa-circle-info fa-2xs"></i></a>
                                             </div>
-                                              <!--Card 5 --> 
-                                            <div class="card">
-                                                <div class="product-image">
-                                                    <img src="images/product -5.jpg">
-                                                </div>
-
-                                                <div class="product-title">
-                                                    <h2>Produit 5</h2>
-                                                </div>
-
-                                                <div class="product-description">
-                                                    <p>description for this product</p>
-                                                </div>
-
-                                                <div class="product-price">
-                                                    <span>199  DH</span>
-                                                </div>
-
-                                                <div class="product-btn">
-                                                        <button onclick="addcart()">Ajouter au pannier</button>
-                                                </div>
-                                                <a href="more-dtl.html"><i class="fa-solid fa-circle-info fa-2xs"></i></a>
-                                            </div>
-                                            
-                                        </div>`
+                                           
+            </div>`
    
 }
 
@@ -456,22 +440,22 @@ function category_2(){
    content.innerHTML=``;
    content.innerHTML=
             `<div class="cards">
-                                              <!--Card 3 --> 
+                                                <!--Card 3 --> 
                                             <div class="card">
                                                 <div class="product-image">
-                                                    <img src="images/product-3.jpg">
+                                                    <img src="/images/product-3.jpg">
                                                 </div>
 
                                                 <div class="product-title">
-                                                    <h2>Produit 3</h2>
+                                                    <h4>Coussin Artisanal</h4>
                                                 </div>
 
                                                 <div class="product-description">
-                                                    <p>description for this product</p>
+                                                    <p>Coussin en coton, brodé à la main</p>
                                                 </div>
 
                                                 <div class="product-price">
-                                                    <span>199  DH</span>
+                                                    <span>99  DH</span>
                                                 </div>
 
                                                 <div class="product-btn">
@@ -482,19 +466,19 @@ function category_2(){
                                               <!--Card 5 --> 
                                             <div class="card">
                                                 <div class="product-image">
-                                                    <img src="images/product -5.jpg">
+                                                    <img src="/images/product-5.jpg">
                                                 </div>
 
                                                 <div class="product-title">
-                                                    <h2>Produit 5</h2>
+                                                    <h4>Textiles Artisanaux</h4>
                                                 </div>
 
                                                 <div class="product-description">
-                                                    <p>description for this product</p>
+                                                    <p>Textiles Traditionnels en coton brodé à la main </p>
                                                 </div>
 
                                                 <div class="product-price">
-                                                    <span>199  DH</span>
+                                                    <span>199 DH</span>
                                                 </div>
 
                                                 <div class="product-btn">
@@ -503,7 +487,7 @@ function category_2(){
                                                 <a href="more-dtl.html"><i class="fa-solid fa-circle-info fa-2xs"></i></a>
                                             </div>
                                             
-                                        </div>`
+            </div>`
    
 }
 //categorie 3
@@ -515,22 +499,22 @@ function category_3(){
    content.innerHTML=
             `<div class="cards">
 
-                                             <!--Card 2 --> 
+                                              <!--Card 2 --> 
                                              <div class="card">
                                                 <div class="product-image">
-                                                    <img src="images/product-2.jpg">
+                                                    <img src="/images/product-2.jpg">
                                                 </div>
 
                                                 <div class="product-title">
-                                                    <h2>Produit 2</h2>
+                                                    <h4>Assiette Artisanale</h4>
                                                 </div>
 
                                                 <div class="product-description">
-                                                    <p>description for this product</p>
+                                                    <p>Assiette en céramique peinte à la main</p>
                                                 </div>
 
                                                 <div class="product-price">
-                                                    <span>199  DH</span>
+                                                    <span>129  DH</span>
                                                 </div>
 
                                                 <div class="product-btn">
@@ -542,19 +526,19 @@ function category_3(){
                                              <!--Card 4 --> 
                                              <div class="card">
                                                 <div class="product-image">
-                                                    <img src="images/product -4.jpg">
+                                                    <img src="/images/produit-4.jpg">
                                                 </div>
 
                                                 <div class="product-title">
-                                                    <h2>Produit 4</h2>
+                                                    <h4>Tasse Artisanal</h4>
                                                 </div>
 
                                                 <div class="product-description">
-                                                    <p>description for this product</p>
+                                                    <p>Tasse en céramique décorée de motifs andalous</p>
                                                 </div>
 
                                                 <div class="product-price">
-                                                    <span>199  DH</span>
+                                                    <span>129  DH</span>
                                                 </div>
 
                                                 <div class="product-btn">
@@ -562,19 +546,19 @@ function category_3(){
                                                 </div>
                                                 <a href="more-dtl.html"><i class="fa-solid fa-circle-info fa-2xs"></i></a>
                                              </div>
-                                             
+
                                              <!--Card 6 --> 
                                              <div class="card">
                                                 <div class="product-image">
-                                                    <img src="images/product-6.jpg">
+                                                    <img src="/images/produit-6.jpg">
                                                 </div>
 
                                                 <div class="product-title">
-                                                    <h2>Produit 6</h2>
+                                                    <h4>Vaisselle Artisanale</h4>
                                                 </div>
 
                                                 <div class="product-description">
-                                                    <p>description for this product</p>
+                                                    <p>Vaisselle en céramique peinte à la main</p>
                                                 </div>
 
                                                 <div class="product-price">
@@ -586,7 +570,7 @@ function category_3(){
                                                 </div>
                                                 <a href="more-dtl.html"><i class="fa-solid fa-circle-info fa-2xs"></i></a>
                                             </div>
-                                        </div>`
+            </div>`
    
 }
 //categorie 4
@@ -599,22 +583,22 @@ function category_4(){
             `<div class="cards">
 
                                            
-                                             <!--Card 4 --> 
+                                            <!--Card 4 --> 
                                              <div class="card">
                                                 <div class="product-image">
-                                                    <img src="images/product -4.jpg">
+                                                    <img src="/images/produit-4.jpg">
                                                 </div>
 
                                                 <div class="product-title">
-                                                    <h2>Produit 4</h2>
+                                                    <h4>Tasse Artisanal</h4>
                                                 </div>
 
                                                 <div class="product-description">
-                                                    <p>description for this product</p>
+                                                    <p>Tasse en céramique décorée de motifs andalous</p>
                                                 </div>
 
                                                 <div class="product-price">
-                                                    <span>199  DH</span>
+                                                    <span>129  DH</span>
                                                 </div>
 
                                                 <div class="product-btn">
@@ -623,7 +607,7 @@ function category_4(){
                                                 <a href="more-dtl.html"><i class="fa-solid fa-circle-info fa-2xs"></i></a>
                                              </div>
                                              
-                                        </div>`
+            </div>`
    
 }
 //categorie 5
@@ -637,19 +621,19 @@ function category_5(){
                                              <!--Card 2 --> 
                                              <div class="card">
                                                 <div class="product-image">
-                                                    <img src="images/product-2.jpg">
+                                                    <img src="/images/product-2.jpg">
                                                 </div>
 
                                                 <div class="product-title">
-                                                    <h2>Produit 2</h2>
+                                                    <h4>Assiette Artisanale</h4>
                                                 </div>
 
                                                 <div class="product-description">
-                                                    <p>description for this product</p>
+                                                    <p>Assiette en céramique peinte à la main</p>
                                                 </div>
 
                                                 <div class="product-price">
-                                                    <span>199  DH</span>
+                                                    <span>129  DH</span>
                                                 </div>
 
                                                 <div class="product-btn">
@@ -661,19 +645,19 @@ function category_5(){
                                              <!--Card 4 --> 
                                              <div class="card">
                                                 <div class="product-image">
-                                                    <img src="images/product -4.jpg">
+                                                    <img src="/images/produit-4.jpg">
                                                 </div>
 
                                                 <div class="product-title">
-                                                    <h2>Produit 4</h2>
+                                                    <h4>Tasse Artisanal</h4>
                                                 </div>
 
                                                 <div class="product-description">
-                                                    <p>description for this product</p>
+                                                    <p>Tasse en céramique décorée de motifs andalous</p>
                                                 </div>
 
                                                 <div class="product-price">
-                                                    <span>199  DH</span>
+                                                    <span>129  DH</span>
                                                 </div>
 
                                                 <div class="product-btn">
@@ -681,18 +665,19 @@ function category_5(){
                                                 </div>
                                                 <a href="more-dtl.html"><i class="fa-solid fa-circle-info fa-2xs"></i></a>
                                              </div>
+
                                              <!--Card 6 --> 
                                              <div class="card">
                                                 <div class="product-image">
-                                                    <img src="images/product-6.jpg">
+                                                    <img src="/images/produit-6.jpg">
                                                 </div>
 
                                                 <div class="product-title">
-                                                    <h2>Produit 6</h2>
+                                                    <h4>Vaisselle Artisanale</h4>
                                                 </div>
 
                                                 <div class="product-description">
-                                                    <p>description for this product</p>
+                                                    <p>Vaisselle en céramique peinte à la main</p>
                                                 </div>
 
                                                 <div class="product-price">
@@ -704,7 +689,7 @@ function category_5(){
                                                 </div>
                                                 <a href="more-dtl.html"><i class="fa-solid fa-circle-info fa-2xs"></i></a>
                                             </div>
-                                        </div>`
+            </div>`
    
 }
 //alll categories
@@ -714,22 +699,22 @@ function All_categories(){
    content.innerHTML=
             `   <div class="cards">
 
-                                        <!--Card 1 --> 
+                                       <!--Card 1 --> 
                                             <div class="card">
                                                     <div class="product-image">
-                                                        <img src="images/product-1.jpg">
+                                                        <img src="/images/product-1.jpg">
                                                     </div>
 
                                                     <div class="product-title">
-                                                        <h2>Produit 1</h2>
+                                                        <h4>Lanterne Artisanale</h4>
                                                     </div>
 
                                                     <div class="product-description">
-                                                        <p>description for this product</p>
+                                                        <p>Lanterne Artisanal ideal pour éclairez votre espace</p>
                                                     </div>
 
                                                     <div class="product-price">
-                                                        <span>199  DH</span>
+                                                        <span>149  DH</span>
                                                     </div>
 
                                                     <div class="product-btn">
@@ -740,19 +725,19 @@ function All_categories(){
                                              <!--Card 2 --> 
                                              <div class="card">
                                                 <div class="product-image">
-                                                    <img src="images/product-2.jpg">
+                                                    <img src="/images/product-2.jpg">
                                                 </div>
 
                                                 <div class="product-title">
-                                                    <h2>Produit 2</h2>
+                                                    <h4>Assiette Artisanale</h4>
                                                 </div>
 
                                                 <div class="product-description">
-                                                    <p>description for this product</p>
+                                                    <p>Assiette en céramique peinte à la main</p>
                                                 </div>
 
                                                 <div class="product-price">
-                                                    <span>199  DH</span>
+                                                    <span>129  DH</span>
                                                 </div>
 
                                                 <div class="product-btn">
@@ -763,19 +748,19 @@ function All_categories(){
                                               <!--Card 3 --> 
                                             <div class="card">
                                                 <div class="product-image">
-                                                    <img src="images/product-3.jpg">
+                                                    <img src="/images/product-3.jpg">
                                                 </div>
 
                                                 <div class="product-title">
-                                                    <h2>Produit 3</h2>
+                                                    <h4>Coussin Artisanal</h4>
                                                 </div>
 
                                                 <div class="product-description">
-                                                    <p>description for this product</p>
+                                                    <p>Coussin en coton, brodé à la main</p>
                                                 </div>
 
                                                 <div class="product-price">
-                                                    <span>199  DH</span>
+                                                    <span>99  DH</span>
                                                 </div>
 
                                                 <div class="product-btn">
@@ -786,19 +771,19 @@ function All_categories(){
                                              <!--Card 4 --> 
                                              <div class="card">
                                                 <div class="product-image">
-                                                    <img src="images/product -4.jpg">
+                                                    <img src="/images/produit-4.jpg">
                                                 </div>
 
                                                 <div class="product-title">
-                                                    <h2>Produit 4</h2>
+                                                    <h4>Tasse Artisanale</h4>
                                                 </div>
 
                                                 <div class="product-description">
-                                                    <p>description for this product</p>
+                                                    <p>Tasse en céramique décorée de motifs andalous</p>
                                                 </div>
 
                                                 <div class="product-price">
-                                                    <span>199  DH</span>
+                                                    <span>129  DH</span>
                                                 </div>
 
                                                 <div class="product-btn">
@@ -809,19 +794,19 @@ function All_categories(){
                                               <!--Card 5 --> 
                                             <div class="card">
                                                 <div class="product-image">
-                                                    <img src="images/product -5.jpg">
+                                                    <img src="/images/product-5.jpg">
                                                 </div>
 
                                                 <div class="product-title">
-                                                    <h2>Produit 5</h2>
+                                                    <h4>Textiles Artisanaux</h4>
                                                 </div>
 
                                                 <div class="product-description">
-                                                    <p>description for this product</p>
+                                                    <p>Textiles Traditionnels en coton brodé à la main </p>
                                                 </div>
 
                                                 <div class="product-price">
-                                                    <span>199  DH</span>
+                                                    <span>199 DH</span>
                                                 </div>
 
                                                 <div class="product-btn">
@@ -832,15 +817,15 @@ function All_categories(){
                                              <!--Card 6 --> 
                                              <div class="card">
                                                 <div class="product-image">
-                                                    <img src="images/product-6.jpg">
+                                                    <img src="/images/produit-6.jpg">
                                                 </div>
 
                                                 <div class="product-title">
-                                                    <h2>Produit 6</h2>
+                                                    <h4>Vaisselle Artisanale</h4>
                                                 </div>
 
                                                 <div class="product-description">
-                                                    <p>description for this product</p>
+                                                    <p>Vaisselle en céramique peinte à la main</p>
                                                 </div>
 
                                                 <div class="product-price">
@@ -852,6 +837,7 @@ function All_categories(){
                                                 </div>
                                                 <a href="more-dtl.html"><i class="fa-solid fa-circle-info fa-2xs"></i></a>
                                             </div>
+                                    
                                         </div>  `
    
 }

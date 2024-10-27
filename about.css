@@ -9,14 +9,12 @@
   list-style: none;
 }
 
-body {
+.aboutPage{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
- 
 }
- 
 :root {
     --hover-color: #AE8964;
     --text-color: black;
@@ -28,11 +26,10 @@ header .sub-div{
     text-align: center;
     color: #ffffff;
     font-weight: 300;
-    width:100%
 }
 
 .container{
-    width: 100vw;
+    width: 85vw;
     margin: 0 auto;
 }
 
@@ -43,7 +40,7 @@ header{
 
 header nav{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding: 20px 0;
 
@@ -52,7 +49,6 @@ header nav{
 header .logo {
     width: 35vw;
     height: 10vh;
-     
 }
 header .logo img{
     width: 30%;
@@ -343,7 +339,6 @@ header nav .menu a{
 }
 
 /* header responsive end -------------------------------------------------------------------------------------*/
-
 
 .sectionglobale {
 
